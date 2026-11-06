@@ -31,8 +31,8 @@ main {
 h1 { font-size: 28px; line-height: 1.25; margin: 8px 0 4px; }
 h2 { font-size: 20px; margin: 36px 0 8px; padding-top: 12px; border-top: 1px solid var(--rule); }
 h3 { font-size: 17px; margin: 20px 0 6px; }
-p, ul { margin: 0 0 12px; }
-ul { padding-left: 22px; }
+p, ul, ol { margin: 0 0 12px; }
+ul, ol { padding-left: 22px; }
 li { margin-bottom: 6px; }
 a { color: var(--accent); }
 .nav { font-size: 15px; margin-bottom: 24px; }
