@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad de PsyBot</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<p class="nav"><a href="./">PsyBot</a></p>
+<p class="langs"><a href="privacy.html">Русский</a> · <a href="privacy.en.html">English</a> · <a href="privacy.uk.html">Українська</a> · <a href="privacy.de.html">Deutsch</a> · <a href="privacy.fr.html">Français</a> · <strong>Español</strong> · <a href="privacy.pt.html">Português</a> · <a href="privacy.ar.html">العربية</a></p>
+
+<h1>Política de privacidad de PsyBot</h1>
+<p class="date">Versión del 13 de noviembre de 2026. Esta es una traducción del <a href="privacy.html">original en ruso</a>; en caso de discrepancia, prevalece el texto ruso.</p>
+
+<h2 id="about">1. De qué trata este documento</h2>
+<p>PsyBot es una aplicación para Android con la que un profesional con práctica privada (en adelante, el <strong>propietario</strong>) gestiona las citas de sus clientes a través de los servicios de mensajería Telegram, Max y WhatsApp. La aplicación la desarrolla y distribuye el empresario individual Dmitrii Fomin, Georgia (en adelante, el <strong>desarrollador</strong>).</p>
+<p>El documento describe qué datos trata la aplicación, dónde se guardan, a quién se transmiten y cómo eliminarlos. Se aplica a la aplicación PsyBot en Google Play y al servidor intermedio del desarrollador descrito en la sección 5.</p>
+<p><strong>Funciones.</strong> El propietario decide por sí mismo a qué clientes da cita y qué información guarda sobre ellos, por lo que es el responsable del tratamiento de los datos de sus clientes. El desarrollador proporciona el programa y no tiene acceso a los datos del propietario ni de sus clientes, con una única excepción: el tránsito cifrado de los eventos entrantes de WhatsApp (sección 5), en el que el desarrollador actúa como encargado del tratamiento por cuenta del propietario.</p>
+
+<h2 id="principle">2. Principio fundamental</h2>
+<p><strong>El desarrollador no tiene datos de los clientes.</strong> Todos los datos que el propietario y sus clientes introducen en la aplicación se guardan en el teléfono del propietario. La aplicación no realiza analítica, no envía al desarrollador informes sobre el uso, los fallos o el dispositivo y no tiene parte de servidor, salvo el servidor intermedio para WhatsApp, que solo guarda texto cifrado.</p>
+
+<h2 id="data">3. Qué datos trata la aplicación</h2>
+<h3>3.1. Datos del propietario</h3>
+<ul>
+<li>ajustes del negocio: nombre, idiomas, zona horaria, moneda, agenda, servicios y precios, textos de los mensajes del bot, documento de acuerdo para los clientes;</li>
+<li>credenciales de los servicios de mensajería conectados (token del bot de Telegram, token de Max, identificador del número y token de WhatsApp), guardadas de forma cifrada;</li>
+<li>si se conecta una cuenta de Google: la dirección de la cuenta y los tokens de acceso a Google Calendar y Google Drive, guardados de forma cifrada;</li>
+<li>la contraseña de la copia de seguridad, si el propietario ha activado la copia en Google Drive, guardada de forma cifrada;</li>
+<li>los ajustes de acceso a la aplicación, si el propietario lo ha activado: el hash del PIN y el código de recuperación, guardados de forma cifrada y no incluidos en la copia de seguridad;</li>
+<li>el registro de diagnóstico de la aplicación (sección 7).</li>
+</ul>
+<h3>3.2. Datos de los clientes del propietario</h3>
+<p>La ficha del cliente se crea cuando el cliente escribe por primera vez al bot del propietario en un servicio de mensajería, o cuando el propietario añade al cliente manualmente. En ella pueden guardarse:</p>
+<ul>
+<li>el identificador de la cuenta del cliente en el servicio de mensajería (identificador numérico de Telegram o Max, número de teléfono de WhatsApp) y el nombre de usuario de Telegram;</li>
+<li>un alias y un nombre, tomados del perfil del servicio de mensajería o introducidos por el propietario;</li>
+<li>el idioma, la zona horaria y la moneda del cliente;</li>
+<li>los contactos que el propietario ha añadido manualmente (por ejemplo, teléfono o correo electrónico);</li>
+<li>las citas, sus cancelaciones y reprogramaciones, el historial de servicios, la lista de espera, los grupos;</li>
+<li>los servicios, precios, cargos y pagos, incluidos los archivos de justificantes que el cliente ha enviado por el servicio de mensajería;</li>
+<li>el comentario y las notas del propietario sobre el cliente, incluidas las notas de sesiones concretas;</li>
+<li>el hecho y el momento en que el cliente aceptó el documento de acuerdo del propietario;</li>
+<li>la hora del último mensaje del cliente por WhatsApp (necesaria para la regla de la ventana de 24 horas de WhatsApp).</li>
+</ul>
+<p>La aplicación no guarda el contenido de las conversaciones: trata el mensaje del cliente en el momento de recibirlo y guarda solo el resultado (por ejemplo, la cita creada). La conversación permanece en el servicio de mensajería, en poder del cliente y del propietario.</p>
+<p>Todos estos datos se encuentran únicamente en el teléfono del propietario. El propietario responde por sí mismo ante sus clientes de la licitud de su tratamiento, incluida la obtención de su consentimiento, y puede utilizar para ello el documento de acuerdo integrado que el bot muestra al cliente.</p>
+
+<h2 id="sharing">4. Adónde se transmiten los datos</h2>
+<h3>4.1. Servicios de mensajería</h3>
+<p>Para que el bot funcione, la aplicación intercambia mensajes con los servidores de Telegram, Max y WhatsApp (Meta) directamente desde el teléfono del propietario a través de sus interfaces de programación oficiales. Los mensajes que el bot envía y recibe son tratados por estos servicios conforme a sus propias normas:</p>
+<ul>
+<li>Telegram — <a href="https://telegram.org/privacy">telegram.org/privacy</a></li>
+<li>Max — <a href="https://max.ru/legal">max.ru/legal</a></li>
+<li>WhatsApp Business Platform (Meta) — <a href="https://www.whatsapp.com/legal/privacy-policy">whatsapp.com/legal/privacy-policy</a></li>
+</ul>
+<p>El desarrollador no tiene acceso a las cuentas del propietario en estos servicios.</p>
+
+<h3>4.2. Google (suscripción Ultimate)</h3>
+<p>Si lo desea, el propietario conecta su cuenta de Google. El inicio de sesión se realiza en el dispositivo mediante el inicio de sesión estándar de Google; la aplicación solicita únicamente dos permisos:</p>
+<ul>
+<li><strong>Google Calendar.</strong> La aplicación crea en la cuenta del propietario un calendario independiente «PsyBot» y anota en él los eventos de la agenda: la hora, el alias del cliente y el nombre del servicio (por ejemplo, «Ivanova · Consulta»), así como las ventanas libres y bloqueadas. No se escribe nada en el calendario principal del propietario. La aplicación recoge los cambios que el propietario hace en Google Calendar.</li>
+<li><strong>Google Drive, carpeta de la aplicación.</strong> Si el propietario ha activado la copia de seguridad, la aplicación sube periódicamente a la carpeta oculta de la aplicación en Drive un único archivo de copia: base de datos, ajustes y tokens de los servicios de mensajería. El archivo se cifra en el teléfono con la contraseña del propietario antes de subirlo; ni Google ni el desarrollador pueden leerlo. Sin la contraseña es imposible restaurar la copia.</li>
+</ul>
+<p>La aplicación utiliza los datos obtenidos de las API de Google solo para estas dos funciones y no los transmite a nadie. El uso que la aplicación hace de la información recibida a través de las API de Google se ajusta a la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Datos de Usuario de los Servicios de API de Google</a>, incluidos los requisitos de uso limitado (Limited Use).</p>
+<p>Al desconectar la cuenta en los ajustes se revoca el acceso de la aplicación en Google y se borran los tokens del teléfono. Los eventos del calendario «PsyBot» y el archivo de copia permanecen en la cuenta del propietario; pueden eliminarse en Google Calendar y en Google Drive.</p>
+
+<h3>4.3. Google Play</h3>
+<p>Las suscripciones Pro y Ultimate se contratan a través de Google Play Billing. El pago, los datos de la tarjeta y el historial de compras los trata Google conforme a sus condiciones; el desarrollador recibe de Google Play únicamente la información sobre el estado de la suscripción necesaria para verificarla y las estadísticas anonimizadas de la consola de desarrollador.</p>
+
+<h3>4.4. Publicidad en la versión gratuita</h3>
+<p>En la suscripción Base la aplicación muestra publicidad a través de Google AdMob. La publicidad es <strong>no personalizada</strong>: la aplicación solicita anuncios a AdMob sin utilizar el historial de intereses del usuario. No obstante, el SDK de AdMob puede recibir información técnica sobre el dispositivo (modelo, versión de Android, identificador de publicidad, ubicación aproximada por dirección IP) de acuerdo con la <a href="https://policies.google.com/technologies/ads">política de Google</a>. La publicidad se muestra solo al propietario en su aplicación; los clientes del propietario no la ven. En las suscripciones Pro y Ultimate no hay publicidad.</p>
+
+<h3>4.5. A quién no se transmiten los datos</h3>
+<p>El desarrollador no vende ni cede a terceros los datos del propietario y de sus clientes, no los utiliza para publicidad y tampoco los recibe él mismo, salvo en el caso descrito en la sección 5.</p>
+
+<h2 id="transit">5. Servidor intermedio para WhatsApp</h2>
+<p>WhatsApp entrega los eventos entrantes únicamente a una dirección web pública, que un teléfono no tiene. Por eso el desarrollador mantiene un <strong>servidor intermedio</strong> por el que pasan los eventos entrantes de WhatsApp. Funciona así:</p>
+<ul>
+<li>recibe el evento de WhatsApp y comprueba su firma;</li>
+<li><strong>cifra de inmediato</strong> el evento con una clave pública creada en el teléfono del propietario; la clave privada no sale del teléfono y solo él puede descifrar el evento;</li>
+<li>guarda únicamente el texto cifrado, el número de orden del evento, la hora de recepción, el número de WhatsApp del propietario y la hora de la última solicitud de su teléfono; el servidor no conoce el nombre, las cuentas ni los clientes del propietario;</li>
+<li>entrega el texto cifrado al teléfono cuando este lo solicita y lo elimina tras la recepción; los eventos que el teléfono no ha recogido se borran a los 7 días; si el teléfono no ha solicitado eventos durante 30 días, el registro del propietario se borra por completo;</li>
+<li>al conectar un número, comprueba una vez a través de WhatsApp que el teléfono es realmente titular de ese número; el token de acceso no se guarda.</li>
+</ul>
+<p>El servidor intermedio no envía mensajes a los clientes (los mensajes salientes van del teléfono a WhatsApp directamente), no guarda tokens de acceso y no escribe el contenido de los mensajes en los registros. Los registros técnicos del servidor contienen la hora de la solicitud, la dirección de red del teléfono y contadores de eventos, y se conservan 7 días como máximo. La conexión con el servidor está protegida con TLS y en la aplicación está fijado su certificado raíz. El código fuente del servidor es abierto.</p>
+<p>El servidor intermedio está alojado en la Unión Europea (Alemania). Los propietarios a los que se aplica el RGPD pueden solicitar al desarrollador un acuerdo de tratamiento de datos en la dirección indicada en la sección 11.</p>
+
+<h2 id="permissions">6. Permisos de Android</h2>
+<ul>
+<li><strong>Internet y estado de la red</strong> — comunicación con los servicios de mensajería, el servidor intermedio y Google; comprobación de si hay red para no perder mensajes cuando se corta la conexión.</li>
+<li><strong>Servicio en primer plano (uso especial)</strong> — el bot funciona de forma continua hasta que el propietario lo detiene y muestra una notificación permanente. Android lo exige a las aplicaciones que reciben mensajes en segundo plano.</li>
+<li><strong>Notificaciones</strong> — avisos al propietario sobre nuevas solicitudes, citas y pagos.</li>
+<li><strong>Inicio tras el reinicio</strong> — el bot se pone en marcha por sí solo después de reiniciar el teléfono, si estaba en funcionamiento.</li>
+<li><strong>Solicitud para desactivar la optimización de la batería</strong> — la aplicación pide que se la excluya del ahorro de batería; de lo contrario, Android la suspende y los clientes no reciben respuesta. El permiso se solicita al propietario de forma expresa; rechazarlo no impide el funcionamiento, pero puede interrumpir el bot.</li>
+<li><strong>Biometría</strong> — acceso a la aplicación con huella dactilar, si el propietario lo ha activado. La huella la comprueba Android; la aplicación recibe solo el resultado de la comprobación y no tiene acceso a las huellas.</li>
+</ul>
+<p>La aplicación no solicita acceso a los contactos, la ubicación, la cámara, el micrófono, los archivos ni los SMS.</p>
+
+<h2 id="log">7. Registro de diagnóstico</h2>
+<p>La aplicación lleva en el teléfono un registro de eventos técnicos: inicio y detención del servicio, disponibilidad de red, estado de la conexión con los servicios de mensajería, tipos de errores. En el registro <strong>no se escriben</strong> tokens, textos de mensajes, nombres ni identificadores de clientes. El registro se conserva 7 días y no se envía a ningún sitio. El propietario puede compartir por sí mismo el archivo del registro, por ejemplo al dirigirse al servicio de asistencia.</p>
+
+<h2 id="retention">8. Conservación y eliminación</h2>
+<ul>
+<li>Los datos del teléfono se conservan hasta que el propietario los elimina en la aplicación o elimina la propia aplicación. Al eliminar la aplicación se eliminan todos sus datos del teléfono.</li>
+<li>La copia de seguridad del sistema Android está <strong>desactivada</strong> para la aplicación: la base con los datos de los clientes no entra en la copia en la nube de Google ni se traslada a un teléfono nuevo con los medios del sistema. El traslado solo es posible con la copia cifrada propia de la aplicación (sección 4.2).</li>
+<li>Los eventos del calendario «PsyBot» y el archivo de copia en Drive permanecen en la cuenta de Google del propietario hasta que él los elimine.</li>
+<li>En el servidor intermedio los eventos se conservan hasta que el teléfono los recibe, pero no más de 7 días; al desconectar WhatsApp en la aplicación, la cola y las claves del propietario se borran de inmediato, y si el teléfono no ha solicitado eventos durante 30 días, automáticamente. Puede solicitarse una eliminación anticipada en la dirección indicada en la sección 11; el procedimiento se describe en la página <a href="delete.html">«Eliminación de datos»</a> (en ruso).</li>
+<li>Los archivos de justificantes de los clientes se conservan en el teléfono durante un plazo limitado, fijado en la aplicación, y después se eliminan.</li>
+</ul>
+
+<h2 id="security">9. Seguridad</h2>
+<p>Los tokens y las contraseñas se guardan de forma cifrada con una clave situada en el almacenamiento protegido de Android (Keystore). Todas las conexiones de red utilizan TLS. Los eventos de WhatsApp se cifran en el servidor intermedio con la clave del propietario, y la copia de seguridad, con la contraseña del propietario antes de enviarla a Drive.</p>
+<p>El propietario puede activar el acceso a la aplicación con PIN y, además, con huella dactilar: entonces las pantallas de la aplicación solo se abren tras el acceso, mientras el bot sigue funcionando. El PIN se guarda en el teléfono en forma de hash, no se transmite al desarrollador, y el desarrollador no puede recuperar un PIN olvidado; para ello, al activar el acceso la aplicación muestra un código de recuperación. Con el acceso activado, el propietario puede desactivar las notificaciones sobre los clientes.</p>
+<p>El PIN bloquea las pantallas de la aplicación, pero no cifra su base de datos en el teléfono, por lo que se recomienda al propietario proteger en todo caso el teléfono con un bloqueo de pantalla. Si el acceso con PIN no está activado, quien obtenga acceso al teléfono desbloqueado obtiene también acceso a los datos de la aplicación.</p>
+
+<h2 id="rights">10. Derechos de los clientes del propietario y edad</h2>
+<p>El cliente del propietario que desee conocer, rectificar o eliminar sus datos debe dirigirse al propietario: solo él tiene esos datos, y la aplicación permite modificar y eliminar la ficha del cliente. El desarrollador no puede leer ni eliminar los datos de los clientes, puesto que no tiene acceso a ellos; en el servidor intermedio no hay información que permita encontrar a un cliente concreto.</p>
+<p>La aplicación está destinada a profesionales mayores de edad. El desarrollador no recoge datos de menores; la decisión de trabajar con clientes menores de edad y de obtener el consentimiento de sus representantes legales corresponde al propietario.</p>
+
+<h2 id="contact">11. Contacto</h2>
+<p>Dirija sus preguntas sobre esta política y las solicitudes relacionadas con el servidor intermedio al desarrollador: empresario individual Dmitrii Fomin, Georgia, correo electrónico: <a href="mailto:gibbelin88@gmail.com">gibbelin88@gmail.com</a>.</p>
+
+<h2 id="changes">12. Cambios</h2>
+<p>Cuando la política cambia, la nueva versión se publica en la misma dirección con una nueva fecha. La aplicación informará al propietario, al actualizarse, de los cambios importantes que afecten a la transmisión de datos.</p>
+</main>
+</body>
+</html>

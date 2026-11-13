@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung von PsyBot</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<p class="nav"><a href="./">PsyBot</a></p>
+<p class="langs"><a href="privacy.html">Русский</a> · <a href="privacy.en.html">English</a> · <a href="privacy.uk.html">Українська</a> · <strong>Deutsch</strong> · <a href="privacy.fr.html">Français</a> · <a href="privacy.es.html">Español</a> · <a href="privacy.pt.html">Português</a> · <a href="privacy.ar.html">العربية</a></p>
+
+<h1>Datenschutzerklärung von PsyBot</h1>
+<p class="date">Fassung vom 13. November 2026. Dies ist eine Übersetzung des <a href="privacy.html">russischen Originals</a>; bei Abweichungen gilt der russische Text.</p>
+
+<h2 id="about">1. Worum es in diesem Dokument geht</h2>
+<p>PsyBot ist eine Android-App, mit der eine Fachkraft in privater Praxis (im Folgenden <strong>Inhaber</strong>) die Termine ihrer Klienten über die Messenger Telegram, Max und WhatsApp verwaltet. Die App wird vom Einzelunternehmer Dmitrii Fomin, Georgien (im Folgenden <strong>Entwickler</strong>), entwickelt und vertrieben.</p>
+<p>Das Dokument beschreibt, welche Daten die App verarbeitet, wo sie gespeichert werden, an wen sie übermittelt werden und wie man sie löscht. Es gilt für die App PsyBot bei Google Play und für den in Abschnitt 5 beschriebenen Vermittlungsserver des Entwicklers.</p>
+<p><strong>Rollen.</strong> Der Inhaber entscheidet selbst, welche Klienten er einträgt und welche Angaben er über sie speichert; deshalb ist er für die Daten seiner Klienten der Verantwortliche. Der Entwickler stellt die Software bereit und hat keinen Zugriff auf die Daten des Inhabers und seiner Klienten – mit einer einzigen Ausnahme: der verschlüsselten Weiterleitung eingehender WhatsApp-Ereignisse (Abschnitt 5), bei der der Entwickler als Auftragsverarbeiter des Inhabers handelt.</p>
+
+<h2 id="principle">2. Grundsatz</h2>
+<p><strong>Der Entwickler hat keine Klientendaten.</strong> Alle Daten, die der Inhaber und seine Klienten in die App eingeben, werden auf dem Telefon des Inhabers gespeichert. Die App betreibt keine Analyse, sendet dem Entwickler keine Berichte über Nutzung, Abstürze oder das Gerät und hat keinen Serverteil außer dem Vermittlungsserver für WhatsApp, der nur Chiffretext speichert.</p>
+
+<h2 id="data">3. Welche Daten die App verarbeitet</h2>
+<h3>3.1. Daten des Inhabers</h3>
+<ul>
+<li>Geschäftseinstellungen: Name, Sprachen, Zeitzone, Währung, Zeitplan, Leistungen und Preise, Texte der Bot-Nachrichten, Vereinbarungsdokument für Klienten;</li>
+<li>Zugangsdaten der verbundenen Messenger (Token des Telegram-Bots, Max-Token, Kennung der Telefonnummer und Token von WhatsApp), verschlüsselt gespeichert;</li>
+<li>bei verbundenem Google-Konto: die Kontoadresse und die Zugriffstoken für Google Kalender und Google Drive, verschlüsselt gespeichert;</li>
+<li>das Passwort der Sicherung, wenn der Inhaber die Sicherung in Google Drive eingeschaltet hat, verschlüsselt gespeichert;</li>
+<li>Einstellungen der Anmeldung in der App, wenn der Inhaber sie eingeschaltet hat: der Hash der PIN und der Wiederherstellungscode, verschlüsselt gespeichert und nicht in der Sicherung enthalten;</li>
+<li>das Diagnoseprotokoll der App (Abschnitt 7).</li>
+</ul>
+<h3>3.2. Daten der Klienten des Inhabers</h3>
+<p>Eine Klientenkarte wird angelegt, wenn ein Klient dem Bot des Inhabers zum ersten Mal im Messenger schreibt oder wenn der Inhaber den Klienten von Hand anlegt. Darin können gespeichert sein:</p>
+<ul>
+<li>die Kennung des Kontos des Klienten im Messenger (numerische Kennung bei Telegram oder Max, Telefonnummer bei WhatsApp) und der Telegram-Benutzername;</li>
+<li>ein Alias und ein Name, aus dem Messenger-Profil übernommen oder vom Inhaber eingegeben;</li>
+<li>Sprache, Zeitzone und Währung des Klienten;</li>
+<li>Kontakte, die der Inhaber von Hand hinzugefügt hat (zum Beispiel Telefon oder E-Mail);</li>
+<li>Termine, deren Absagen und Verschiebungen, Leistungsverlauf, Warteliste, Gruppen;</li>
+<li>Leistungen, Preise, Forderungen und Zahlungen, einschließlich Belegdateien, die der Klient im Messenger geschickt hat;</li>
+<li>Kommentar und Notizen des Inhabers zum Klienten, auch Notizen zu einzelnen Sitzungen;</li>
+<li>die Tatsache und der Zeitpunkt, zu dem der Klient das Vereinbarungsdokument des Inhabers angenommen hat;</li>
+<li>der Zeitpunkt der letzten WhatsApp-Nachricht des Klienten (nötig für die 24-Stunden-Regel von WhatsApp).</li>
+</ul>
+<p>Den Inhalt der Unterhaltungen speichert die App nicht: Sie verarbeitet die Nachricht des Klienten beim Eingang und speichert nur das Ergebnis (zum Beispiel einen angelegten Termin). Die Unterhaltung bleibt im Messenger beim Klienten und beim Inhaber.</p>
+<p>All diese Daten befinden sich nur auf dem Telefon des Inhabers. Der Inhaber ist gegenüber seinen Klienten selbst für die Rechtmäßigkeit der Verarbeitung verantwortlich, auch für das Einholen ihrer Einwilligung, und kann dafür das eingebaute Vereinbarungsdokument nutzen, das der Bot dem Klienten zeigt.</p>
+
+<h2 id="sharing">4. Wohin Daten übermittelt werden</h2>
+<h3>4.1. Messenger</h3>
+<p>Für den Betrieb des Bots tauscht die App Nachrichten mit den Servern von Telegram, Max und WhatsApp (Meta) direkt vom Telefon des Inhabers über deren offizielle Programmierschnittstellen aus. Nachrichten, die der Bot sendet und empfängt, werden von diesen Diensten nach deren Regeln verarbeitet:</p>
+<ul>
+<li>Telegram — <a href="https://telegram.org/privacy">telegram.org/privacy</a></li>
+<li>Max — <a href="https://max.ru/legal">max.ru/legal</a></li>
+<li>WhatsApp Business Platform (Meta) — <a href="https://www.whatsapp.com/legal/privacy-policy">whatsapp.com/legal/privacy-policy</a></li>
+</ul>
+<p>Der Entwickler hat keinen Zugriff auf die Konten des Inhabers bei diesen Diensten.</p>
+
+<h3>4.2. Google (Abo Ultimate)</h3>
+<p>Auf Wunsch verbindet der Inhaber sein Google-Konto. Die Anmeldung erfolgt auf dem Gerät über die Standardanmeldung von Google; die App fordert nur zwei Berechtigungen an:</p>
+<ul>
+<li><strong>Google Kalender.</strong> Die App legt im Konto des Inhabers einen eigenen Kalender „PsyBot“ an und trägt dort die Termine des Zeitplans ein: Zeit, Alias des Klienten und Name der Leistung (zum Beispiel „Ivanova · Beratung“) sowie freie und gesperrte Zeitfenster. In den Hauptkalender des Inhabers wird nichts geschrieben. Änderungen, die der Inhaber im Google Kalender vornimmt, übernimmt die App zurück.</li>
+<li><strong>Google Drive, App-Ordner.</strong> Hat der Inhaber die Sicherung eingeschaltet, lädt die App regelmäßig eine Sicherungsdatei in den verborgenen App-Ordner in Drive: Datenbank, Einstellungen und Messenger-Token. Die Datei wird vor dem Hochladen auf dem Telefon mit dem Passwort des Inhabers verschlüsselt; weder Google noch der Entwickler können sie lesen. Ohne das Passwort lässt sich die Sicherung nicht wiederherstellen.</li>
+</ul>
+<p>Daten aus den Google-APIs verwendet die App nur für diese beiden Funktionen und gibt sie an niemanden weiter. Die Verwendung der über Google-APIs erhaltenen Informationen durch die App entspricht der <a href="https://developers.google.com/terms/api-services-user-data-policy">Richtlinie zu Nutzerdaten für Google-API-Dienste</a>, einschließlich der Anforderungen zur eingeschränkten Nutzung (Limited Use).</p>
+<p>Das Trennen des Kontos in den Einstellungen widerruft den Zugriff der App bei Google und löscht die Token auf dem Telefon. Die Termine im Kalender „PsyBot“ und die Sicherungsdatei bleiben dabei im Konto des Inhabers; sie können im Google Kalender und in Google Drive gelöscht werden.</p>
+
+<h3>4.3. Google Play</h3>
+<p>Die Abos Pro und Ultimate werden über Google Play Billing abgeschlossen. Zahlung, Kartendaten und Kaufverlauf verarbeitet Google nach seinen Bedingungen; der Entwickler erhält von Google Play nur die Angaben zum Abostatus, die zu dessen Prüfung nötig sind, und anonymisierte Statistiken der Entwicklerkonsole.</p>
+
+<h3>4.4. Werbung in der kostenlosen Version</h3>
+<p>Im Abo Base zeigt die App Werbung über Google AdMob. Die Werbung ist <strong>nicht personalisiert</strong>: Die App fordert bei AdMob Anzeigen an, ohne den Interessenverlauf des Nutzers zu verwenden. Das AdMob-SDK kann dabei technische Angaben zum Gerät erhalten (Modell, Android-Version, Werbe-ID, ungefährer Standort anhand der IP-Adresse) gemäß der <a href="https://policies.google.com/technologies/ads">Richtlinie von Google</a>. Werbung wird nur dem Inhaber in seiner App gezeigt, die Klienten des Inhabers sehen keine Werbung. In den Abos Pro und Ultimate gibt es keine Werbung.</p>
+
+<h3>4.5. An wen keine Daten übermittelt werden</h3>
+<p>Der Entwickler verkauft die Daten des Inhabers und seiner Klienten nicht, gibt sie nicht an Dritte weiter, verwendet sie nicht für Werbung und erhält sie auch selbst nicht – außer in dem in Abschnitt 5 beschriebenen Fall.</p>
+
+<h2 id="transit">5. Vermittlungsserver für WhatsApp</h2>
+<p>WhatsApp stellt eingehende Ereignisse nur an eine öffentliche Webadresse zu, die ein Telefon nicht hat. Deshalb betreibt der Entwickler einen <strong>Vermittlungsserver</strong>, über den eingehende WhatsApp-Ereignisse laufen. Er arbeitet so:</p>
+<ul>
+<li>er nimmt das Ereignis von WhatsApp entgegen und prüft dessen Signatur;</li>
+<li>er <strong>verschlüsselt das Ereignis sofort</strong> mit einem öffentlichen Schlüssel, der auf dem Telefon des Inhabers erzeugt wurde; der private Schlüssel verlässt das Telefon nicht, nur das Telefon kann das Ereignis entschlüsseln;</li>
+<li>er speichert nur den Chiffretext, die laufende Nummer des Ereignisses, die Empfangszeit, die WhatsApp-Nummer des Inhabers und den Zeitpunkt der letzten Anfrage seines Telefons; Namen, Konten und Klienten des Inhabers kennt der Server nicht;</li>
+<li>er gibt den Chiffretext auf Anfrage an das Telefon heraus und löscht ihn nach dem Empfang; Ereignisse, die das Telefon nicht abgeholt hat, werden nach 7 Tagen gelöscht; hat das Telefon 30 Tage lang keine Ereignisse angefragt, wird der Eintrag des Inhabers vollständig gelöscht;</li>
+<li>beim Verbinden einer Nummer prüft er einmalig über WhatsApp, dass das Telefon tatsächlich über diese Nummer verfügt; das Zugriffstoken wird dabei nicht gespeichert.</li>
+</ul>
+<p>Der Vermittlungsserver sendet keine Nachrichten an Klienten (ausgehende Nachrichten gehen vom Telefon direkt an WhatsApp), speichert keine Zugriffstoken und schreibt keine Nachrichteninhalte in Protokolle. Die technischen Protokolle des Servers enthalten die Zeit der Anfrage, die Netzwerkadresse des Telefons und Ereigniszähler und werden höchstens 7 Tage aufbewahrt. Die Verbindung zum Server ist durch TLS geschützt, in der App ist das Stammzertifikat des Servers fest hinterlegt. Der Quellcode des Servers ist offen.</p>
+<p>Der Vermittlungsserver steht in der Europäischen Union (Deutschland). Inhaber, für die die DSGVO gilt, können beim Entwickler unter der Adresse aus Abschnitt 11 einen Vertrag zur Auftragsverarbeitung anfordern.</p>
+
+<h2 id="permissions">6. Android-Berechtigungen</h2>
+<ul>
+<li><strong>Internet und Netzwerkstatus</strong> — Verbindung zu den Messengern, zum Vermittlungsserver und zu Google; Prüfung, ob ein Netz vorhanden ist, damit bei Unterbrechungen keine Nachrichten verloren gehen.</li>
+<li><strong>Dienst im Vordergrund (besondere Verwendung)</strong> — der Bot läuft ständig, bis der Inhaber ihn anhält, und zeigt eine dauerhafte Benachrichtigung. Das verlangt Android von Apps, die Nachrichten im Hintergrund empfangen.</li>
+<li><strong>Benachrichtigungen</strong> — Meldungen an den Inhaber über neue Anfragen, Termine und Zahlungen.</li>
+<li><strong>Start nach dem Neustart</strong> — der Bot startet nach einem Neustart des Telefons von selbst, wenn er zuvor lief.</li>
+<li><strong>Anfrage zum Abschalten der Akkuoptimierung</strong> — die App bittet darum, vom Energiesparen ausgenommen zu werden, sonst legt Android sie schlafen und Klienten erhalten keine Antworten. Die Berechtigung wird beim Inhaber ausdrücklich angefragt; eine Ablehnung verhindert den Betrieb nicht, kann den Bot aber unterbrechen.</li>
+<li><strong>Biometrie</strong> — Anmeldung in der App per Fingerabdruck, wenn der Inhaber sie eingeschaltet hat. Den Fingerabdruck prüft Android; die App erhält nur das Ergebnis der Prüfung und hat keinen Zugriff auf die Fingerabdrücke selbst.</li>
+</ul>
+<p>Die App fordert keinen Zugriff auf Kontakte, Standort, Kamera, Mikrofon, Dateien und SMS an.</p>
+
+<h2 id="log">7. Diagnoseprotokoll</h2>
+<p>Die App führt auf dem Telefon ein Protokoll technischer Ereignisse: Start und Stopp des Dienstes, Vorhandensein eines Netzes, Zustand der Verbindung zu den Messengern, Fehlerarten. In das Protokoll werden <strong>keine</strong> Token, Nachrichtentexte, Namen und Kennungen von Klienten geschrieben. Das Protokoll wird 7 Tage aufbewahrt und nirgendwohin gesendet. Der Inhaber kann die Protokolldatei selbst weitergeben, zum Beispiel bei einer Anfrage an den Support.</p>
+
+<h2 id="retention">8. Speicherung und Löschung</h2>
+<ul>
+<li>Die Daten auf dem Telefon bleiben gespeichert, bis der Inhaber sie in der App löscht oder die App selbst löscht. Das Löschen der App löscht alle ihre Daten vom Telefon.</li>
+<li>Die Systemsicherung von Android ist für die App <strong>ausgeschaltet</strong>: Die Datenbank mit den Klientendaten gelangt nicht in die Cloud-Sicherung von Google und wird nicht mit Systemmitteln auf ein neues Telefon übertragen. Eine Übertragung ist nur mit der eigenen verschlüsselten Sicherung möglich (Abschnitt 4.2).</li>
+<li>Die Termine im Kalender „PsyBot“ und die Sicherungsdatei in Drive bleiben im Google-Konto des Inhabers, bis er sie löscht.</li>
+<li>Auf dem Vermittlungsserver bleiben Ereignisse bis zum Empfang durch das Telefon gespeichert, höchstens jedoch 7 Tage; wird WhatsApp in der App getrennt, werden die Warteschlange und die Schlüssel des Inhabers sofort gelöscht, und wenn das Telefon 30 Tage lang keine Ereignisse angefragt hat, automatisch. Eine frühere Löschung kann unter der Adresse aus Abschnitt 11 angefragt werden; das Vorgehen ist auf der Seite <a href="delete.html">„Datenlöschung“</a> (auf Russisch) beschrieben.</li>
+<li>Belegdateien der Klienten werden auf dem Telefon für eine begrenzte, in der App festgelegte Zeit gespeichert und danach gelöscht.</li>
+</ul>
+
+<h2 id="security">9. Sicherheit</h2>
+<p>Token und Passwörter werden verschlüsselt gespeichert, mit einem Schlüssel im geschützten Speicher von Android (Keystore). Alle Netzwerkverbindungen verwenden TLS. WhatsApp-Ereignisse werden auf dem Vermittlungsserver mit dem Schlüssel des Inhabers verschlüsselt, die Sicherung mit dem Passwort des Inhabers, bevor sie an Drive gesendet wird.</p>
+<p>Der Inhaber kann die Anmeldung in der App per PIN und zusätzlich per Fingerabdruck einschalten: Dann öffnen sich die Bildschirme der App erst nach der Anmeldung, während der Bot weiterläuft. Die PIN wird auf dem Telefon als Hash gespeichert und nicht an den Entwickler übermittelt, und der Entwickler kann eine vergessene PIN nicht wiederherstellen – dafür zeigt die App beim Einschalten der Anmeldung einen Wiederherstellungscode. Bei eingeschalteter Anmeldung kann der Inhaber die Anzeige von Benachrichtigungen über Klienten ausschalten.</p>
+<p>Die PIN sperrt die Bildschirme der App, verschlüsselt aber nicht ihre Datenbank auf dem Telefon; deshalb wird dem Inhaber empfohlen, das Telefon in jedem Fall mit einer Bildschirmsperre zu schützen. Ist die Anmeldung per PIN nicht eingeschaltet, erhält jeder, der Zugriff auf das entsperrte Telefon bekommt, auch Zugriff auf die Daten der App.</p>
+
+<h2 id="rights">10. Rechte der Klienten des Inhabers und Alter</h2>
+<p>Ein Klient des Inhabers, der seine Daten einsehen, berichtigen oder löschen lassen möchte, wendet sich an den Inhaber: Nur er hat diese Daten, und die App erlaubt es, die Klientenkarte zu ändern und zu löschen. Der Entwickler kann Klientendaten weder lesen noch löschen, da er keinen Zugriff darauf hat; auf dem Vermittlungsserver gibt es keine Angaben, anhand derer sich ein bestimmter Klient finden ließe.</p>
+<p>Die App ist für volljährige Fachkräfte bestimmt. Der Entwickler erhebt keine Daten von Kindern; über die Arbeit mit minderjährigen Klienten und über die Einwilligung ihrer gesetzlichen Vertreter entscheidet der Inhaber.</p>
+
+<h2 id="contact">11. Kontakt</h2>
+<p>Fragen zu dieser Erklärung und Anfragen zum Vermittlungsserver richten Sie bitte an den Entwickler: Einzelunternehmer Dmitrii Fomin, Georgien, E-Mail: <a href="mailto:gibbelin88@gmail.com">gibbelin88@gmail.com</a>.</p>
+
+<h2 id="changes">12. Änderungen</h2>
+<p>Bei einer Änderung der Erklärung wird die neue Fassung unter derselben Adresse mit neuem Datum veröffentlicht. Über wesentliche Änderungen, die die Übermittlung von Daten betreffen, informiert die App den Inhaber beim Update.</p>
+</main>
+</body>
+</html>
