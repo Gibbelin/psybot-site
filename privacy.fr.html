@@ -25,7 +25,7 @@
 <h2 id="data">3. Données traitées par l’application</h2>
 <h3>3.1. Données du propriétaire</h3>
 <ul>
-<li>réglages de l’activité&nbsp;: nom, langues, fuseau horaire, devise, planning, services et tarifs, textes des messages du bot, document d’accord pour les clients&nbsp;;</li>
+<li>réglages de l’activité&nbsp;: nom, langues, fuseau horaire, devise, planning, services et tarifs, textes des messages du bot, lien général de la séance, document d’accord pour les clients&nbsp;;</li>
 <li>identifiants des messageries connectées (jeton du bot Telegram, jeton Max, identifiant du numéro et jeton WhatsApp), stockés sous forme chiffrée&nbsp;;</li>
 <li>si un compte Google est connecté&nbsp;: l’adresse du compte et les jetons d’accès à Google Agenda et à Google Drive, stockés sous forme chiffrée&nbsp;;</li>
 <li>le mot de passe de la sauvegarde, si le propriétaire a activé la sauvegarde sur Google Drive, stocké sous forme chiffrée&nbsp;;</li>
@@ -42,6 +42,7 @@
 <li>les rendez-vous, leurs annulations et reports, l’historique des services, la liste d’attente, les groupes&nbsp;;</li>
 <li>les services, tarifs, montants dus et paiements, y compris les fichiers de reçus envoyés par le client dans la messagerie&nbsp;;</li>
 <li>le commentaire et les notes du propriétaire sur le client, y compris les notes sur des séances particulières&nbsp;;</li>
+<li>le lien de la séance (par exemple vers une visioconférence) que le propriétaire a défini pour le client ou pour une séance de groupe&nbsp;; le bot l’envoie au client dans la confirmation du rendez-vous et dans le rappel de séance&nbsp;;</li>
 <li>le fait et la date de l’acceptation par le client du document d’accord du propriétaire&nbsp;;</li>
 <li>l’heure du dernier message WhatsApp du client (nécessaire pour la règle de la fenêtre de 24 heures de WhatsApp).</li>
 </ul>
