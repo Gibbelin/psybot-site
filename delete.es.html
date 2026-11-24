@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eliminación de datos de PsyBot</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<p class="nav"><a href="./">PsyBot</a></p>
+<p class="langs"><a href="delete.html">Русский</a> · <a href="delete.en.html">English</a> · <a href="delete.uk.html">Українська</a> · <a href="delete.de.html">Deutsch</a> · <a href="delete.fr.html">Français</a> · <strong>Español</strong> · <a href="delete.pt.html">Português (Portugal)</a> · <a href="delete.pt-BR.html">Português (Brasil)</a> · <a href="delete.ar.html">العربية</a></p>
+
+<h1>Eliminación de datos de PsyBot</h1>
+<p class="date">Versión del 6 de noviembre de 2026. Esta es una traducción del <a href="delete.html">original en ruso</a>; en caso de discrepancia, prevalece el texto ruso.</p>
+
+<p class="lead">Cómo eliminar los datos que trata la aplicación PsyBot para Android. El desarrollador de la aplicación es el empresario individual Dmitrii Fomin, Georgia. La descripción completa de los datos está en la <a href="privacy.es.html">política de privacidad</a>.</p>
+
+<h2 id="where">Dónde están los datos</h2>
+<ul>
+<li><strong>En el teléfono del propietario de la aplicación</strong>: fichas de clientes, citas, cargos y pagos, ajustes, tokens de las aplicaciones de mensajería y de Google, registro de diagnóstico. El desarrollador no tiene acceso a ellos.</li>
+<li><strong>En el servidor intermedio del desarrollador</strong>, solo si WhatsApp está conectado: el identificador del número de WhatsApp en Meta, la clave pública de cifrado y la cola de eventos entrantes cifrados que el teléfono aún no ha recogido.</li>
+<li><strong>En la cuenta de Google del propietario</strong>, solo si está conectada: el calendario «PsyBot» y el archivo de la copia de seguridad cifrada en Google Drive.</li>
+<li><strong>En las aplicaciones de mensajería</strong>: la conversación del cliente con el bot queda en Telegram, Max y WhatsApp según sus normas. La aplicación no guarda la conversación.</li>
+</ul>
+
+<h2 id="how">Cómo eliminar los datos</h2>
+<ol>
+<li><strong>Un cliente.</strong> Abra la ficha del cliente en la aplicación y pulse «Eliminar». La ficha, las citas y los cargos del cliente se borran del teléfono de inmediato.</li>
+<li><strong>Datos en el servidor intermedio (WhatsApp).</strong> En la aplicación abra «Ajustes» → «Servidor» y, en la sección de WhatsApp, pulse «Desconectar». El registro del propietario y la cola de eventos del servidor intermedio se borran de inmediato. Si el servidor intermedio no está disponible en ese momento, los eventos no recogidos se borran solos en un máximo de 7 días, y el registro del propietario, tras 30 días sin solicitudes del teléfono.</li>
+<li><strong>Datos en la cuenta de Google.</strong> En la aplicación abra «Ajustes» → «Google y copia de seguridad» y pulse «Desconectar»: la aplicación revoca su acceso y borra los tokens del teléfono. Elimine el calendario «PsyBot» en Google Calendar, en los ajustes de ese calendario. Elimine el archivo de la copia en Google Drive: «Configuración» → «Gestionar aplicaciones» → PsyBot → «Eliminar datos ocultos de aplicaciones».</li>
+<li><strong>Todo lo del teléfono.</strong> Desinstale la aplicación PsyBot. Con ella Android elimina todos sus datos: fichas de clientes, citas, cargos, ajustes, tokens y registro. Estos datos no entran en la copia de seguridad del sistema Android.</li>
+<li><strong>Solicitud al desarrollador.</strong> Si no es posible desconectar WhatsApp desde la aplicación (teléfono perdido, aplicación ya desinstalada), el registro del servidor intermedio se borrará solo tras 30 días sin solicitudes del teléfono. Para no esperar, escriba a <a href="mailto:gibbelin88@gmail.com?subject=PsyBot%20data%20deletion">gibbelin88@gmail.com</a> con el asunto «PsyBot data deletion» e indique el identificador del número de WhatsApp de Meta Business. El desarrollador eliminará el registro del propietario y la cola de eventos del servidor intermedio en un plazo de 30 días y confirmará la eliminación por correo de respuesta.</li>
+</ol>
+
+<h2 id="what">Qué se elimina, qué permanece y plazos</h2>
+<ul>
+<li><strong>Teléfono del propietario.</strong> Todo lo que han introducido el propietario y sus clientes se conserva hasta que el propietario elimine la ficha del cliente o la aplicación. Los archivos de justificantes de los clientes se eliminan automáticamente al vencer el plazo fijado en la aplicación.</li>
+<li><strong>Servidor intermedio.</strong> El registro del propietario (identificador del número, clave pública, hash de la clave de acceso, hora de la última solicitud) se conserva mientras WhatsApp esté conectado, se borra de inmediato al desconectarlo y automáticamente si el teléfono no ha solicitado eventos durante 30 días. Los eventos cifrados se conservan hasta que el teléfono los recibe, pero no más de 7 días. Los registros técnicos del servidor (hora de la solicitud, dirección de red del teléfono, contadores de eventos) se conservan como máximo 7 días; no contienen el contenido de los mensajes ni datos de clientes.</li>
+<li><strong>Cuenta de Google del propietario.</strong> El calendario «PsyBot» y el archivo de la copia permanecen hasta que el propietario los elimine. El desarrollador no tiene acceso a ellos.</li>
+<li><strong>Aplicaciones de mensajería.</strong> Las conversaciones las conservan Telegram, Max y WhatsApp según sus propias normas; se eliminan con las herramientas de cada aplicación.</li>
+<li><strong>Google Play.</strong> Los datos de la suscripción los conserva Google según sus condiciones.</li>
+</ul>
+
+<h2 id="clients">Para los clientes del especialista</h2>
+<p>Si reservó cita con un especialista a través de su bot, sus datos están únicamente en el teléfono del especialista. Para corregirlos o eliminarlos, diríjase al especialista: puede eliminar su ficha en la aplicación. El desarrollador no tiene sus datos y no puede eliminarlos.</p>
+
+<h2 id="contact">Contacto</h2>
+<p>Preguntas sobre la eliminación de datos: empresario individual Dmitrii Fomin, Georgia, correo electrónico: <a href="mailto:gibbelin88@gmail.com">gibbelin88@gmail.com</a>.</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suppression des données PsyBot</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<p class="nav"><a href="./">PsyBot</a></p>
+<p class="langs"><a href="delete.html">Русский</a> · <a href="delete.en.html">English</a> · <a href="delete.uk.html">Українська</a> · <a href="delete.de.html">Deutsch</a> · <strong>Français</strong> · <a href="delete.es.html">Español</a> · <a href="delete.pt.html">Português (Portugal)</a> · <a href="delete.pt-BR.html">Português (Brasil)</a> · <a href="delete.ar.html">العربية</a></p>
+
+<h1>Suppression des données PsyBot</h1>
+<p class="date">Version du 6 novembre 2026. Ceci est une traduction de l’<a href="delete.html">original russe</a>&nbsp;; en cas de divergence, le texte russe fait foi.</p>
+
+<p class="lead">Comment supprimer les données traitées par l’application PsyBot pour Android. L’application est développée par l’entrepreneur individuel Dmitrii Fomin, Géorgie. La description complète des données figure dans la <a href="privacy.fr.html">politique de confidentialité</a>.</p>
+
+<h2 id="where">Où se trouvent les données</h2>
+<ul>
+<li><strong>Sur le téléphone du propriétaire de l’application</strong> — fiches clients, rendez-vous, montants dus et paiements, paramètres, jetons des messageries et de Google, journal de diagnostic. Le développeur n’y a pas accès.</li>
+<li><strong>Sur le serveur relais du développeur</strong>, uniquement si WhatsApp est connecté — l’identifiant du numéro WhatsApp chez Meta, la clé publique de chiffrement et la file des événements entrants chiffrés que le téléphone n’a pas encore récupérés.</li>
+<li><strong>Dans le compte Google du propriétaire</strong>, uniquement s’il est connecté — l’agenda «&nbsp;PsyBot&nbsp;» et le fichier de sauvegarde chiffrée sur Google Drive.</li>
+<li><strong>Dans les messageries</strong> — la conversation du client avec le bot reste chez Telegram, Max et WhatsApp selon leurs règles. L’application ne conserve pas la conversation.</li>
+</ul>
+
+<h2 id="how">Comment supprimer les données</h2>
+<ol>
+<li><strong>Un seul client.</strong> Ouvrez la fiche du client dans l’application et appuyez sur «&nbsp;Supprimer&nbsp;». La fiche, les rendez-vous et les montants dus du client sont effacés du téléphone immédiatement.</li>
+<li><strong>Données sur le serveur relais (WhatsApp).</strong> Dans l’application, ouvrez «&nbsp;Paramètres&nbsp;» → «&nbsp;Serveur&nbsp;» et, dans la section WhatsApp, appuyez sur «&nbsp;Déconnecter&nbsp;». L’enregistrement du propriétaire et la file d’événements sur le serveur relais sont effacés immédiatement. Si le serveur relais est indisponible à ce moment-là, les événements non récupérés s’effacent d’eux-mêmes au plus tard sous 7 jours, et l’enregistrement du propriétaire après 30 jours sans requête du téléphone.</li>
+<li><strong>Données dans le compte Google.</strong> Dans l’application, ouvrez «&nbsp;Paramètres&nbsp;» → «&nbsp;Google et sauvegarde&nbsp;» et appuyez sur «&nbsp;Déconnecter&nbsp;»&nbsp;: l’application révoque son accès et efface les jetons du téléphone. Supprimez l’agenda «&nbsp;PsyBot&nbsp;» dans Google Agenda, dans les paramètres de cet agenda. Supprimez le fichier de sauvegarde sur Google Drive&nbsp;: «&nbsp;Paramètres&nbsp;» → «&nbsp;Gérer les applications&nbsp;» → PsyBot → «&nbsp;Supprimer les données d’application masquées&nbsp;».</li>
+<li><strong>Tout ce qui est sur le téléphone.</strong> Désinstallez l’application PsyBot. Android supprime avec elle toutes ses données&nbsp;: fiches clients, rendez-vous, montants dus, paramètres, jetons et journal. Ces données ne sont pas incluses dans la sauvegarde système d’Android.</li>
+<li><strong>Demande au développeur.</strong> S’il est impossible de déconnecter WhatsApp depuis l’application (téléphone perdu, application déjà désinstallée), l’enregistrement sur le serveur relais s’efface de lui-même après 30 jours sans requête du téléphone. Pour ne pas attendre, écrivez à <a href="mailto:gibbelin88@gmail.com?subject=PsyBot%20data%20deletion">gibbelin88@gmail.com</a> avec l’objet «&nbsp;PsyBot data deletion&nbsp;» et indiquez l’identifiant du numéro WhatsApp de Meta Business. Le développeur supprimera l’enregistrement du propriétaire et la file d’événements sur le serveur relais dans un délai de 30 jours et confirmera la suppression par retour d’e-mail.</li>
+</ol>
+
+<h2 id="what">Ce qui est supprimé, ce qui reste et les délais</h2>
+<ul>
+<li><strong>Téléphone du propriétaire.</strong> Tout ce que le propriétaire et ses clients ont saisi est conservé jusqu’à ce que le propriétaire supprime la fiche du client ou l’application. Les fichiers de reçus des clients sont supprimés automatiquement à l’issue du délai défini dans l’application.</li>
+<li><strong>Serveur relais.</strong> L’enregistrement du propriétaire (identifiant du numéro, clé publique, hachage de la clé d’accès, heure de la dernière requête) est conservé tant que WhatsApp est connecté, effacé immédiatement à la déconnexion et automatiquement si le téléphone n’a pas demandé d’événements pendant 30 jours. Les événements chiffrés sont conservés jusqu’à leur réception par le téléphone, mais pas plus de 7 jours. Les journaux techniques du serveur (heure de la requête, adresse réseau du téléphone, compteurs d’événements) sont conservés 7 jours au plus&nbsp;; ils ne contiennent ni contenu de messages ni données de clients.</li>
+<li><strong>Compte Google du propriétaire.</strong> L’agenda «&nbsp;PsyBot&nbsp;» et le fichier de sauvegarde restent jusqu’à ce que le propriétaire les supprime lui-même. Le développeur n’y a pas accès.</li>
+<li><strong>Messageries.</strong> Les conversations sont conservées par Telegram, Max et WhatsApp selon leurs propres règles&nbsp;; elles se suppriment avec les outils de la messagerie.</li>
+<li><strong>Google Play.</strong> Les informations sur l’abonnement sont conservées par Google selon ses conditions.</li>
+</ul>
+
+<h2 id="clients">Pour les clients du spécialiste</h2>
+<p>Si vous avez pris rendez-vous avec un spécialiste par l’intermédiaire de son bot, vos données ne se trouvent que sur son téléphone. Pour les corriger ou les supprimer, adressez-vous au spécialiste&nbsp;: il peut supprimer votre fiche dans l’application. Le développeur ne détient pas vos données et ne peut pas les supprimer.</p>
+
+<h2 id="contact">Contact</h2>
+<p>Questions sur la suppression des données&nbsp;: entrepreneur individuel Dmitrii Fomin, Géorgie, e-mail&nbsp;: <a href="mailto:gibbelin88@gmail.com">gibbelin88@gmail.com</a>.</p>
+</main>
+</body>
+</html>

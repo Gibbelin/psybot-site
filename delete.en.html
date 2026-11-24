@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PsyBot Data Deletion</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<p class="nav"><a href="./">PsyBot</a></p>
+<p class="langs"><a href="delete.html">Русский</a> · <strong>English</strong> · <a href="delete.uk.html">Українська</a> · <a href="delete.de.html">Deutsch</a> · <a href="delete.fr.html">Français</a> · <a href="delete.es.html">Español</a> · <a href="delete.pt.html">Português (Portugal)</a> · <a href="delete.pt-BR.html">Português (Brasil)</a> · <a href="delete.ar.html">العربية</a></p>
+
+<h1>PsyBot Data Deletion</h1>
+<p class="date">Version of 6 November 2026. This is a translation of the <a href="delete.html">Russian original</a>; if the texts differ, the Russian version applies.</p>
+
+<p class="lead">How to delete the data processed by the PsyBot app for Android. The app is developed by Dmitrii Fomin, individual entrepreneur, Georgia. The data is described in full in the <a href="privacy.en.html">privacy policy</a>.</p>
+
+<h2 id="where">Where the data is</h2>
+<ul>
+<li><strong>On the app owner’s phone</strong> — client cards, bookings, charges and payments, settings, messenger and Google tokens, the diagnostic log. The developer has no access to them.</li>
+<li><strong>On the developer’s relay server</strong>, only if WhatsApp is connected — the WhatsApp phone number ID in Meta, the public encryption key and the queue of encrypted incoming events the phone has not yet collected.</li>
+<li><strong>In the owner’s Google account</strong>, only if it is connected — the “PsyBot” calendar and the encrypted backup file on Google Drive.</li>
+<li><strong>In the messengers</strong> — the client’s conversation with the bot stays with Telegram, Max and WhatsApp under their rules. The app does not store the conversation.</li>
+</ul>
+
+<h2 id="how">How to delete the data</h2>
+<ol>
+<li><strong>One client.</strong> Open the client card in the app and tap “Delete”. The client’s card, bookings and charges are erased from the phone at once.</li>
+<li><strong>Data on the relay (WhatsApp).</strong> In the app open “Settings” → “Server” and tap “Disconnect” in the WhatsApp section. The owner’s record and the event queue on the relay are erased at once. If the relay is unavailable at that moment, uncollected events are erased automatically within 7 days, and the owner’s record after 30 days without requests from the phone.</li>
+<li><strong>Data in the Google account.</strong> In the app open “Settings” → “Google and backup” and tap “Disconnect”: the app revokes its access and erases the tokens on the phone. Delete the “PsyBot” calendar in Google Calendar, in that calendar’s settings. Delete the backup file on Google Drive: “Settings” → “Manage apps” → PsyBot → “Delete hidden app data”.</li>
+<li><strong>Everything from the phone.</strong> Uninstall the PsyBot app. Android deletes all its data with it: client cards, bookings, charges, settings, tokens and the log. This data is not included in the Android system backup.</li>
+<li><strong>Request to the developer.</strong> If WhatsApp cannot be disconnected from the app (the phone is lost, the app was uninstalled earlier), the record on the relay is erased automatically after 30 days without requests from the phone. To avoid waiting, write to <a href="mailto:gibbelin88@gmail.com?subject=PsyBot%20data%20deletion">gibbelin88@gmail.com</a> with the subject “PsyBot data deletion” and give the WhatsApp phone number ID from Meta Business. The developer will delete the owner’s record and the event queue on the relay within 30 days and confirm the deletion by reply.</li>
+</ol>
+
+<h2 id="what">What is deleted, what remains, and time limits</h2>
+<ul>
+<li><strong>The owner’s phone.</strong> Everything entered by the owner and their clients is kept until the owner deletes the client card or the app. Clients’ receipt files are deleted automatically after the period set in the app.</li>
+<li><strong>The relay.</strong> The owner’s record (phone number ID, public key, access key hash, time of the last request) is kept while WhatsApp is connected, erased at once on disconnection and automatically if the phone has not requested events for 30 days. Encrypted events are kept until the phone receives them, but no longer than 7 days. The server’s technical logs (request time, the phone’s network address, event counters) are kept no longer than 7 days; they contain no message content and no client data.</li>
+<li><strong>The owner’s Google account.</strong> The “PsyBot” calendar and the backup file remain until the owner deletes them. The developer has no access to them.</li>
+<li><strong>The messengers.</strong> Conversations are stored by Telegram, Max and WhatsApp under their own rules; they are deleted with the messenger’s own tools.</li>
+<li><strong>Google Play.</strong> Subscription details are stored by Google under its terms.</li>
+</ul>
+
+<h2 id="clients">For the specialist’s clients</h2>
+<p>If you booked with a specialist through their bot, your data exists only on the specialist’s phone. To correct or delete it, contact the specialist: they can delete your card in the app. The developer does not have your data and cannot delete it.</p>
+
+<h2 id="contact">Contact</h2>
+<p>Questions about data deletion: Dmitrii Fomin, individual entrepreneur, Georgia, e-mail <a href="mailto:gibbelin88@gmail.com">gibbelin88@gmail.com</a>.</p>
+</main>
+</body>
+</html>

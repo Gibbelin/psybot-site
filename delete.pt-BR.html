@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exclusão de dados do PsyBot</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<p class="nav"><a href="./">PsyBot</a></p>
+<p class="langs"><a href="delete.html">Русский</a> · <a href="delete.en.html">English</a> · <a href="delete.uk.html">Українська</a> · <a href="delete.de.html">Deutsch</a> · <a href="delete.fr.html">Français</a> · <a href="delete.es.html">Español</a> · <a href="delete.pt.html">Português (Portugal)</a> · <strong>Português (Brasil)</strong> · <a href="delete.ar.html">العربية</a></p>
+
+<h1>Exclusão de dados do PsyBot</h1>
+<p class="date">Versão de 6 de novembro de 2026. Esta é uma tradução do <a href="delete.html">original em russo</a>; em caso de divergência, prevalece o texto em russo.</p>
+
+<p class="lead">Como excluir os dados tratados pelo aplicativo PsyBot para Android. O desenvolvedor do aplicativo é o empresário individual Dmitrii Fomin, Geórgia. A descrição completa dos dados está na <a href="privacy.pt-BR.html">política de privacidade</a>.</p>
+
+<h2 id="where">Onde estão os dados</h2>
+<ul>
+<li><strong>No celular do proprietário do aplicativo</strong> — fichas de clientes, agendamentos, cobranças e pagamentos, configurações, tokens dos aplicativos de mensagens e do Google, registro de diagnóstico. O desenvolvedor não tem acesso a eles.</li>
+<li><strong>No servidor intermediário do desenvolvedor</strong>, somente se o WhatsApp estiver conectado — o identificador do número de WhatsApp na Meta, a chave pública de criptografia e a fila de eventos recebidos criptografados que o celular ainda não buscou.</li>
+<li><strong>Na conta do Google do proprietário</strong>, somente se estiver conectada — a agenda «PsyBot» e o arquivo do backup criptografado no Google Drive.</li>
+<li><strong>Nos aplicativos de mensagens</strong> — a conversa do cliente com o bot fica no Telegram, no Max e no WhatsApp, conforme as regras de cada um. O aplicativo não guarda a conversa.</li>
+</ul>
+
+<h2 id="how">Como excluir os dados</h2>
+<ol>
+<li><strong>Um cliente.</strong> Abra a ficha do cliente no aplicativo e toque em «Excluir». A ficha, os agendamentos e as cobranças do cliente são apagados do celular imediatamente.</li>
+<li><strong>Dados no servidor intermediário (WhatsApp).</strong> No aplicativo, abra «Configurações» → «Servidor» e, na seção do WhatsApp, toque em «Desconectar». O registro do proprietário e a fila de eventos no servidor intermediário são apagados imediatamente. Se o servidor intermediário estiver indisponível nesse momento, os eventos não buscados são apagados sozinhos em até 7 dias, e o registro do proprietário após 30 dias sem solicitações do celular.</li>
+<li><strong>Dados na conta do Google.</strong> No aplicativo, abra «Configurações» → «Google e backup» e toque em «Desconectar»: o aplicativo revoga seu acesso e apaga os tokens do celular. Exclua a agenda «PsyBot» no Google Agenda, nas configurações dessa agenda. Exclua o arquivo do backup no Google Drive: «Configurações» → «Gerenciar apps» → PsyBot → «Excluir dados ocultos do app».</li>
+<li><strong>Tudo o que está no celular.</strong> Desinstale o aplicativo PsyBot. Com ele, o Android exclui todos os seus dados: fichas de clientes, agendamentos, cobranças, configurações, tokens e registro. Esses dados não entram no backup do sistema Android.</li>
+<li><strong>Solicitação ao desenvolvedor.</strong> Se não for possível desconectar o WhatsApp pelo aplicativo (celular perdido, aplicativo já desinstalado), o registro no servidor intermediário será apagado sozinho após 30 dias sem solicitações do celular. Para não esperar, escreva para <a href="mailto:gibbelin88@gmail.com?subject=PsyBot%20data%20deletion">gibbelin88@gmail.com</a> com o assunto «PsyBot data deletion» e informe o identificador do número de WhatsApp do Meta Business. O desenvolvedor excluirá o registro do proprietário e a fila de eventos no servidor intermediário em até 30 dias e confirmará a exclusão por e-mail de resposta.</li>
+</ol>
+
+<h2 id="what">O que é excluído, o que permanece e prazos</h2>
+<ul>
+<li><strong>Celular do proprietário.</strong> Tudo o que o proprietário e seus clientes inseriram é guardado até o proprietário excluir a ficha do cliente ou o aplicativo. Os arquivos de comprovantes dos clientes são excluídos automaticamente no prazo definido no aplicativo.</li>
+<li><strong>Servidor intermediário.</strong> O registro do proprietário (identificador do número, chave pública, hash da chave de acesso, horário da última solicitação) é guardado enquanto o WhatsApp estiver conectado, é apagado imediatamente ao desconectar e automaticamente se o celular não solicitar eventos por 30 dias. Os eventos criptografados são guardados até serem recebidos pelo celular, mas por no máximo 7 dias. Os registros técnicos do servidor (horário da solicitação, endereço de rede do celular, contadores de eventos) são guardados por no máximo 7 dias; não contêm o conteúdo das mensagens nem dados de clientes.</li>
+<li><strong>Conta do Google do proprietário.</strong> A agenda «PsyBot» e o arquivo do backup permanecem até o proprietário excluí-los. O desenvolvedor não tem acesso a eles.</li>
+<li><strong>Aplicativos de mensagens.</strong> As conversas são guardadas pelo Telegram, pelo Max e pelo WhatsApp conforme suas próprias regras; são excluídas com as ferramentas de cada aplicativo.</li>
+<li><strong>Google Play.</strong> As informações sobre a assinatura são guardadas pelo Google conforme seus termos.</li>
+</ul>
+
+<h2 id="clients">Para os clientes do especialista</h2>
+<p>Se você agendou com um especialista pelo bot dele, seus dados existem apenas no celular do especialista. Para corrigi-los ou excluí-los, fale com o especialista: ele pode excluir sua ficha no aplicativo. O desenvolvedor não tem seus dados e não pode excluí-los.</p>
+
+<h2 id="contact">Contatos</h2>
+<p>Dúvidas sobre a exclusão de dados: empresário individual Dmitrii Fomin, Geórgia, e-mail: <a href="mailto:gibbelin88@gmail.com">gibbelin88@gmail.com</a>.</p>
+</main>
+</body>
+</html>

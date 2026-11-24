@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenlöschung bei PsyBot</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<p class="nav"><a href="./">PsyBot</a></p>
+<p class="langs"><a href="delete.html">Русский</a> · <a href="delete.en.html">English</a> · <a href="delete.uk.html">Українська</a> · <strong>Deutsch</strong> · <a href="delete.fr.html">Français</a> · <a href="delete.es.html">Español</a> · <a href="delete.pt.html">Português (Portugal)</a> · <a href="delete.pt-BR.html">Português (Brasil)</a> · <a href="delete.ar.html">العربية</a></p>
+
+<h1>Datenlöschung bei PsyBot</h1>
+<p class="date">Fassung vom 6. November 2026. Dies ist eine Übersetzung des <a href="delete.html">russischen Originals</a>; bei Abweichungen gilt der russische Text.</p>
+
+<p class="lead">So löschen Sie die Daten, die die Android-App PsyBot verarbeitet. Entwickler der App ist der Einzelunternehmer Dmitrii Fomin, Georgien. Die vollständige Beschreibung der Daten steht in der <a href="privacy.de.html">Datenschutzerklärung</a>.</p>
+
+<h2 id="where">Wo die Daten liegen</h2>
+<ul>
+<li><strong>Auf dem Telefon des Inhabers der App</strong> — Klientenkarten, Termine, Belastungen und Zahlungen, Einstellungen, Tokens der Messenger und von Google, das Diagnoseprotokoll. Der Entwickler hat darauf keinen Zugriff.</li>
+<li><strong>Auf dem Vermittlungsserver des Entwicklers</strong>, nur wenn WhatsApp verbunden ist — die Kennung der WhatsApp-Nummer bei Meta, der öffentliche Verschlüsselungsschlüssel und die Warteschlange verschlüsselter eingehender Ereignisse, die das Telefon noch nicht abgeholt hat.</li>
+<li><strong>Im Google-Konto des Inhabers</strong>, nur wenn es verbunden ist — der Kalender „PsyBot“ und die Datei der verschlüsselten Sicherung in Google Drive.</li>
+<li><strong>In den Messengern</strong> — der Chat des Klienten mit dem Bot bleibt bei Telegram, Max und WhatsApp nach deren Regeln. Die App speichert den Chat nicht.</li>
+</ul>
+
+<h2 id="how">So löschen Sie die Daten</h2>
+<ol>
+<li><strong>Einen Klienten.</strong> Öffnen Sie die Klientenkarte in der App und tippen Sie auf „Löschen“. Karte, Termine und Belastungen des Klienten werden sofort vom Telefon gelöscht.</li>
+<li><strong>Daten auf dem Vermittlungsserver (WhatsApp).</strong> Öffnen Sie in der App „Einstellungen“ → „Server“ und tippen Sie im Abschnitt WhatsApp auf „Trennen“. Der Eintrag des Inhabers und die Ereigniswarteschlange auf dem Vermittlungsserver werden sofort gelöscht. Ist der Vermittlungsserver in diesem Moment nicht erreichbar, werden nicht abgeholte Ereignisse spätestens nach 7 Tagen von selbst gelöscht, der Eintrag des Inhabers nach 30 Tagen ohne Anfragen vom Telefon.</li>
+<li><strong>Daten im Google-Konto.</strong> Öffnen Sie in der App „Einstellungen“ → „Google und Sicherung“ und tippen Sie auf „Trennen“: Die App widerruft ihren Zugriff und löscht die Tokens auf dem Telefon. Den Kalender „PsyBot“ löschen Sie in Google Kalender in den Einstellungen dieses Kalenders. Die Sicherungsdatei löschen Sie in Google Drive: „Einstellungen“ → „Apps verwalten“ → PsyBot → „Verborgene App-Daten löschen“.</li>
+<li><strong>Alles vom Telefon.</strong> Deinstallieren Sie die App PsyBot. Android löscht damit alle ihre Daten: Klientenkarten, Termine, Belastungen, Einstellungen, Tokens und das Protokoll. In die Systemsicherung von Android gelangen diese Daten nicht.</li>
+<li><strong>Anfrage an den Entwickler.</strong> Lässt sich WhatsApp nicht aus der App trennen (Telefon verloren, App schon deinstalliert), wird der Eintrag auf dem Vermittlungsserver nach 30 Tagen ohne Anfragen vom Telefon von selbst gelöscht. Um nicht zu warten, schreiben Sie an <a href="mailto:gibbelin88@gmail.com?subject=PsyBot%20data%20deletion">gibbelin88@gmail.com</a> mit dem Betreff „PsyBot data deletion“ und nennen Sie die Kennung der WhatsApp-Nummer aus Meta Business. Der Entwickler löscht den Eintrag des Inhabers und die Ereigniswarteschlange auf dem Vermittlungsserver innerhalb von 30 Tagen und bestätigt die Löschung per Antwort-E-Mail.</li>
+</ol>
+
+<h2 id="what">Was gelöscht wird, was bleibt, und Fristen</h2>
+<ul>
+<li><strong>Telefon des Inhabers.</strong> Alles, was der Inhaber und seine Klienten eingegeben haben, bleibt gespeichert, bis der Inhaber die Klientenkarte oder die App löscht. Belegdateien der Klienten werden automatisch nach der in der App eingestellten Frist gelöscht.</li>
+<li><strong>Vermittlungsserver.</strong> Der Eintrag des Inhabers (Kennung der Nummer, öffentlicher Schlüssel, Hash des Zugangsschlüssels, Zeitpunkt der letzten Anfrage) bleibt gespeichert, solange WhatsApp verbunden ist, wird beim Trennen sofort gelöscht und automatisch, wenn das Telefon 30 Tage lang keine Ereignisse angefragt hat. Verschlüsselte Ereignisse bleiben bis zum Empfang durch das Telefon gespeichert, höchstens jedoch 7 Tage. Technische Serverprotokolle (Zeitpunkt der Anfrage, Netzwerkadresse des Telefons, Ereigniszähler) werden höchstens 7 Tage aufbewahrt; Nachrichteninhalte und Klientendaten enthalten sie nicht.</li>
+<li><strong>Google-Konto des Inhabers.</strong> Der Kalender „PsyBot“ und die Sicherungsdatei bleiben, bis der Inhaber sie selbst löscht. Der Entwickler hat darauf keinen Zugriff.</li>
+<li><strong>Messenger.</strong> Die Chats speichern Telegram, Max und WhatsApp nach ihren eigenen Regeln; gelöscht werden sie mit den Mitteln des Messengers.</li>
+<li><strong>Google Play.</strong> Angaben zum Abo speichert Google nach seinen Bedingungen.</li>
+</ul>
+
+<h2 id="clients">Für Klienten der Fachperson</h2>
+<p>Wenn Sie über den Bot einer Fachperson einen Termin gebucht haben, liegen Ihre Daten nur auf deren Telefon. Um sie zu berichtigen oder zu löschen, wenden Sie sich an die Fachperson: Sie kann Ihre Karte in der App löschen. Der Entwickler hat Ihre Daten nicht und kann sie nicht löschen.</p>
+
+<h2 id="contact">Kontakt</h2>
+<p>Fragen zur Datenlöschung: Einzelunternehmer Dmitrii Fomin, Georgien, E-Mail: <a href="mailto:gibbelin88@gmail.com">gibbelin88@gmail.com</a>.</p>
+</main>
+</body>
+</html>

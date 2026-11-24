@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eliminação de dados do PsyBot</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<p class="nav"><a href="./">PsyBot</a></p>
+<p class="langs"><a href="delete.html">Русский</a> · <a href="delete.en.html">English</a> · <a href="delete.uk.html">Українська</a> · <a href="delete.de.html">Deutsch</a> · <a href="delete.fr.html">Français</a> · <a href="delete.es.html">Español</a> · <strong>Português (Portugal)</strong> · <a href="delete.pt-BR.html">Português (Brasil)</a> · <a href="delete.ar.html">العربية</a></p>
+
+<h1>Eliminação de dados do PsyBot</h1>
+<p class="date">Versão de 6 de novembro de 2026. Esta é uma tradução do <a href="delete.html">original em russo</a>; em caso de divergência, prevalece o texto russo.</p>
+
+<p class="lead">Como eliminar os dados tratados pela aplicação PsyBot para Android. O programador da aplicação é o empresário em nome individual Dmitrii Fomin, Geórgia. A descrição completa dos dados está na <a href="privacy.pt.html">política de privacidade</a>.</p>
+
+<h2 id="where">Onde estão os dados</h2>
+<ul>
+<li><strong>No telemóvel do proprietário da aplicação</strong> — fichas de clientes, marcações, débitos e pagamentos, definições, tokens das aplicações de mensagens e da Google, registo de diagnóstico. O programador não tem acesso a eles.</li>
+<li><strong>No servidor intermediário do programador</strong>, apenas se o WhatsApp estiver ligado — o identificador do número de WhatsApp na Meta, a chave pública de encriptação e a fila de eventos recebidos encriptados que o telemóvel ainda não recolheu.</li>
+<li><strong>Na conta Google do proprietário</strong>, apenas se estiver ligada — o calendário «PsyBot» e o ficheiro da cópia de segurança encriptada no Google Drive.</li>
+<li><strong>Nas aplicações de mensagens</strong> — a conversa do cliente com o bot fica no Telegram, no Max e no WhatsApp, segundo as regras de cada um. A aplicação não guarda a conversa.</li>
+</ul>
+
+<h2 id="how">Como eliminar os dados</h2>
+<ol>
+<li><strong>Um cliente.</strong> Abra a ficha do cliente na aplicação e toque em «Eliminar». A ficha, as marcações e os débitos do cliente são apagados do telemóvel de imediato.</li>
+<li><strong>Dados no servidor intermediário (WhatsApp).</strong> Na aplicação, abra «Definições» → «Servidor» e, na secção do WhatsApp, toque em «Desligar». O registo do proprietário e a fila de eventos no servidor intermediário são apagados de imediato. Se o servidor intermediário estiver indisponível nesse momento, os eventos não recolhidos apagam-se sozinhos no prazo máximo de 7 dias, e o registo do proprietário após 30 dias sem pedidos do telemóvel.</li>
+<li><strong>Dados na conta Google.</strong> Na aplicação, abra «Definições» → «Google e cópia de segurança» e toque em «Desligar»: a aplicação revoga o seu acesso e apaga os tokens do telemóvel. Elimine o calendário «PsyBot» no Google Calendar, nas definições desse calendário. Elimine o ficheiro da cópia no Google Drive: «Definições» → «Gerir aplicações» → PsyBot → «Eliminar dados da aplicação ocultos».</li>
+<li><strong>Tudo o que está no telemóvel.</strong> Desinstale a aplicação PsyBot. Com ela, o Android elimina todos os seus dados: fichas de clientes, marcações, débitos, definições, tokens e registo. Estes dados não entram na cópia de segurança do sistema Android.</li>
+<li><strong>Pedido ao programador.</strong> Se não for possível desligar o WhatsApp a partir da aplicação (telemóvel perdido, aplicação já desinstalada), o registo no servidor intermediário apaga-se sozinho após 30 dias sem pedidos do telemóvel. Para não esperar, escreva para <a href="mailto:gibbelin88@gmail.com?subject=PsyBot%20data%20deletion">gibbelin88@gmail.com</a> com o assunto «PsyBot data deletion» e indique o identificador do número de WhatsApp do Meta Business. O programador eliminará o registo do proprietário e a fila de eventos no servidor intermediário no prazo de 30 dias e confirmará a eliminação por e-mail de resposta.</li>
+</ol>
+
+<h2 id="what">O que é eliminado, o que permanece e prazos</h2>
+<ul>
+<li><strong>Telemóvel do proprietário.</strong> Tudo o que o proprietário e os seus clientes introduziram é conservado até o proprietário eliminar a ficha do cliente ou a aplicação. Os ficheiros de comprovativos dos clientes são eliminados automaticamente no prazo definido na aplicação.</li>
+<li><strong>Servidor intermediário.</strong> O registo do proprietário (identificador do número, chave pública, hash da chave de acesso, hora do último pedido) é conservado enquanto o WhatsApp estiver ligado, é apagado de imediato ao desligar e automaticamente se o telemóvel não pedir eventos durante 30 dias. Os eventos encriptados são conservados até serem recebidos pelo telemóvel, mas não mais de 7 dias. Os registos técnicos do servidor (hora do pedido, endereço de rede do telemóvel, contadores de eventos) são conservados no máximo 7 dias; não contêm o conteúdo das mensagens nem dados de clientes.</li>
+<li><strong>Conta Google do proprietário.</strong> O calendário «PsyBot» e o ficheiro da cópia permanecem até o proprietário os eliminar. O programador não tem acesso a eles.</li>
+<li><strong>Aplicações de mensagens.</strong> As conversas são conservadas pelo Telegram, pelo Max e pelo WhatsApp segundo as suas próprias regras; eliminam-se com as ferramentas de cada aplicação.</li>
+<li><strong>Google Play.</strong> As informações sobre a subscrição são conservadas pela Google segundo as suas condições.</li>
+</ul>
+
+<h2 id="clients">Para os clientes do especialista</h2>
+<p>Se fez uma marcação com um especialista através do bot dele, os seus dados existem apenas no telemóvel do especialista. Para os corrigir ou eliminar, contacte o especialista: ele pode eliminar a sua ficha na aplicação. O programador não tem os seus dados e não os pode eliminar.</p>
+
+<h2 id="contact">Contactos</h2>
+<p>Questões sobre a eliminação de dados: empresário em nome individual Dmitrii Fomin, Geórgia, e-mail: <a href="mailto:gibbelin88@gmail.com">gibbelin88@gmail.com</a>.</p>
+</main>
+</body>
+</html>
