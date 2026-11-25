@@ -12,7 +12,7 @@
 <p class="langs"><a href="privacy.html">Русский</a> · <a href="privacy.en.html">English</a> · <a href="privacy.uk.html">Українська</a> · <a href="privacy.de.html">Deutsch</a> · <a href="privacy.fr.html">Français</a> · <a href="privacy.es.html">Español</a> · <a href="privacy.pt.html">Português (Portugal)</a> · <strong>Português (Brasil)</strong> · <a href="privacy.ar.html">العربية</a></p>
 
 <h1>Política de privacidade do PsyBot</h1>
-<p class="date">Versão de 13 de novembro de 2026. Esta é uma tradução do <a href="privacy.html">original em russo</a>; em caso de divergência, prevalece o texto em russo.</p>
+<p class="date">Versão de 26 de novembro de 2026. Esta é uma tradução do <a href="privacy.html">original em russo</a>; em caso de divergência, prevalece o texto em russo.</p>
 
 <h2 id="about">1. Sobre este documento</h2>
 <p>O PsyBot é um aplicativo para Android com o qual um profissional que atende em prática privada (doravante, o <strong>proprietário</strong>) gerencia os agendamentos dos seus clientes pelos aplicativos de mensagens Telegram, Max e WhatsApp. O aplicativo é desenvolvido e distribuído pelo empresário individual Dmitrii Fomin, Geórgia (doravante, o <strong>desenvolvedor</strong>).</p>
@@ -74,7 +74,10 @@
 <h3>4.4. Anúncios na versão gratuita</h3>
 <p>Na assinatura Base, o aplicativo mostra anúncios pelo Google AdMob. Os anúncios são <strong>não personalizados</strong>: o aplicativo pede anúncios ao AdMob sem usar o histórico de interesses do usuário. Ainda assim, o SDK do AdMob pode receber informações técnicas sobre o dispositivo (modelo, versão do Android, identificador de publicidade, localização aproximada pelo endereço IP) de acordo com a <a href="https://policies.google.com/technologies/ads">política do Google</a>. Os anúncios são mostrados apenas ao proprietário, no aplicativo dele; os clientes do proprietário não os veem. Nas assinaturas Pro e Ultimate não há anúncios.</p>
 
-<h3>4.5. A quem os dados não são transmitidos</h3>
+<h3>4.5. Widget da tela inicial</h3>
+<p>Se o proprietário tiver colocado o widget «Próximas sessões» na tela inicial do celular, o conteúdo dele — os horários das sessões, os pseudônimos dos clientes, os nomes das sessões em grupo e o número de novos pedidos e eventos — é recebido pelo aplicativo de tela inicial instalado no celular; para o widget, o aplicativo não envia nada a partir do celular.</p>
+
+<h3>4.6. A quem os dados não são transmitidos</h3>
 <p>O desenvolvedor não vende nem cede a terceiros os dados do proprietário e dos seus clientes, não os usa para publicidade e também não os recebe, exceto no caso descrito na seção 5.</p>
 
 <h2 id="transit">5. Servidor intermediário para o WhatsApp</h2>
@@ -114,7 +117,7 @@
 
 <h2 id="security">9. Segurança</h2>
 <p>Os tokens e as senhas são guardados de forma criptografada, com uma chave no armazenamento protegido do Android (Keystore). Todas as conexões de rede usam TLS. Os eventos do WhatsApp são criptografados no servidor intermediário com a chave do proprietário, e o backup, com a senha do proprietário antes de ser enviado ao Drive.</p>
-<p>O proprietário pode ativar o bloqueio do aplicativo com PIN e, adicionalmente, o desbloqueio com impressão digital: nesse caso, as telas do aplicativo só se abrem após o desbloqueio, enquanto o bot continua funcionando. O PIN é guardado no celular na forma de hash, não é transmitido ao desenvolvedor, e o desenvolvedor não consegue recuperar um PIN esquecido — para isso, ao ativar o bloqueio, o aplicativo mostra um código de recuperação. Com o bloqueio ativado, o proprietário pode desativar as notificações sobre os clientes.</p>
+<p>O proprietário pode ativar o bloqueio do aplicativo com PIN e, adicionalmente, o desbloqueio com impressão digital: nesse caso, as telas do aplicativo só se abrem após o desbloqueio, enquanto o bot continua funcionando. O PIN é guardado no celular na forma de hash, não é transmitido ao desenvolvedor, e o desenvolvedor não consegue recuperar um PIN esquecido — para isso, ao ativar o bloqueio, o aplicativo mostra um código de recuperação. Com o bloqueio ativado, o proprietário pode desativar as notificações sobre os clientes e a exibição das sessões no widget.</p>
 <p>O PIN bloqueia as telas do aplicativo, mas não criptografa o banco de dados dele no celular; por isso, recomenda-se que o proprietário proteja sempre o celular com um bloqueio de tela. Se o bloqueio com PIN não estiver ativado, quem tiver acesso ao celular desbloqueado também terá acesso aos dados do aplicativo.</p>
 
 <h2 id="rights">10. Direitos dos clientes do proprietário e idade</h2>

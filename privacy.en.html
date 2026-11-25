@@ -12,7 +12,7 @@
 <p class="langs"><a href="privacy.html">Русский</a> · <strong>English</strong> · <a href="privacy.uk.html">Українська</a> · <a href="privacy.de.html">Deutsch</a> · <a href="privacy.fr.html">Français</a> · <a href="privacy.es.html">Español</a> · <a href="privacy.pt.html">Português (Portugal)</a> · <a href="privacy.pt-BR.html">Português (Brasil)</a> · <a href="privacy.ar.html">العربية</a></p>
 
 <h1>PsyBot Privacy Policy</h1>
-<p class="date">Version of 13 November 2026. This is a translation of the <a href="privacy.html">Russian original</a>; if the texts differ, the Russian version applies.</p>
+<p class="date">Version of 26 November 2026. This is a translation of the <a href="privacy.html">Russian original</a>; if the texts differ, the Russian version applies.</p>
 
 <h2 id="about">1. About this document</h2>
 <p>PsyBot is an Android app that a private-practice specialist (the <strong>owner</strong>) uses to book their clients through the Telegram, Max and WhatsApp messengers. The app is developed and distributed by Dmitrii Fomin, individual entrepreneur, Georgia (the <strong>developer</strong>).</p>
@@ -74,7 +74,10 @@
 <h3>4.4. Ads in the free version</h3>
 <p>In the Base subscription the app shows ads through Google AdMob. The ads are <strong>non-personalized</strong>: the app requests ads from AdMob without using the user’s interest history. The AdMob SDK may still receive technical device information (model, Android version, advertising ID, approximate location by IP address) in accordance with <a href="https://policies.google.com/technologies/ads">Google’s policy</a>. Ads are shown only to the owner in their app; the owner’s clients do not see ads. There are no ads in the Pro and Ultimate subscriptions.</p>
 
-<h3>4.5. Who data is not shared with</h3>
+<h3>4.5. Home screen widget</h3>
+<p>If the owner has placed the “Upcoming sessions” widget on the phone’s home screen, its content — session times, clients’ aliases, names of group sessions, and the number of new requests and events — is received by the home screen app installed on the phone; for the widget, the app sends nothing from the phone.</p>
+
+<h3>4.6. Who data is not shared with</h3>
 <p>The developer does not sell or pass the data of the owner or their clients to third parties, does not use it for advertising, and does not receive it, except in the case described in section 5.</p>
 
 <h2 id="transit">5. Relay server for WhatsApp</h2>
@@ -114,7 +117,7 @@
 
 <h2 id="security">9. Security</h2>
 <p>Tokens and passwords are stored encrypted with a key in Android’s secure storage (Keystore). All network connections use TLS. WhatsApp events are encrypted on the relay with the owner’s key, and the backup with the owner’s password before it is sent to Drive.</p>
-<p>The owner can turn on sign-in to the app with a PIN and, in addition, with a fingerprint: the app’s screens then open only after sign-in, while the bot keeps running. The PIN is stored on the phone as a hash and is not sent to the developer, and the developer cannot recover a forgotten PIN — for that, the app shows a recovery code when sign-in is turned on. With sign-in turned on, the owner can turn off notifications about clients.</p>
+<p>The owner can turn on sign-in to the app with a PIN and, in addition, with a fingerprint: the app’s screens then open only after sign-in, while the bot keeps running. The PIN is stored on the phone as a hash and is not sent to the developer, and the developer cannot recover a forgotten PIN — for that, the app shows a recovery code when sign-in is turned on. With sign-in turned on, the owner can turn off notifications about clients and the display of sessions on the widget.</p>
 <p>The PIN locks the app’s screens but does not encrypt its database on the phone, so the owner is advised to protect the phone with a screen lock in any case. If PIN sign-in is not turned on, anyone who gains access to the unlocked phone also gains access to the app’s data.</p>
 
 <h2 id="rights">10. Rights of the owner’s clients, and age</h2>

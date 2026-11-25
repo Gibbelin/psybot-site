@@ -12,7 +12,7 @@
 <p class="langs"><a href="privacy.html">Русский</a> · <a href="privacy.en.html">English</a> · <a href="privacy.uk.html">Українська</a> · <a href="privacy.de.html">Deutsch</a> · <a href="privacy.fr.html">Français</a> · <strong>Español</strong> · <a href="privacy.pt.html">Português (Portugal)</a> · <a href="privacy.pt-BR.html">Português (Brasil)</a> · <a href="privacy.ar.html">العربية</a></p>
 
 <h1>Política de privacidad de PsyBot</h1>
-<p class="date">Versión del 13 de noviembre de 2026. Esta es una traducción del <a href="privacy.html">original en ruso</a>; en caso de discrepancia, prevalece el texto ruso.</p>
+<p class="date">Versión del 26 de noviembre de 2026. Esta es una traducción del <a href="privacy.html">original en ruso</a>; en caso de discrepancia, prevalece el texto ruso.</p>
 
 <h2 id="about">1. De qué trata este documento</h2>
 <p>PsyBot es una aplicación para Android con la que un profesional con práctica privada (en adelante, el <strong>propietario</strong>) gestiona las citas de sus clientes a través de los servicios de mensajería Telegram, Max y WhatsApp. La aplicación la desarrolla y distribuye el empresario individual Dmitrii Fomin, Georgia (en adelante, el <strong>desarrollador</strong>).</p>
@@ -74,7 +74,10 @@
 <h3>4.4. Publicidad en la versión gratuita</h3>
 <p>En la suscripción Base la aplicación muestra publicidad a través de Google AdMob. La publicidad es <strong>no personalizada</strong>: la aplicación solicita anuncios a AdMob sin utilizar el historial de intereses del usuario. No obstante, el SDK de AdMob puede recibir información técnica sobre el dispositivo (modelo, versión de Android, identificador de publicidad, ubicación aproximada por dirección IP) de acuerdo con la <a href="https://policies.google.com/technologies/ads">política de Google</a>. La publicidad se muestra solo al propietario en su aplicación; los clientes del propietario no la ven. En las suscripciones Pro y Ultimate no hay publicidad.</p>
 
-<h3>4.5. A quién no se transmiten los datos</h3>
+<h3>4.5. Widget de la pantalla de inicio</h3>
+<p>Si el propietario ha colocado el widget «Próximas sesiones» en la pantalla de inicio del teléfono, su contenido —las horas de las sesiones, los alias de los clientes, los nombres de las sesiones grupales y el número de nuevas solicitudes y eventos— lo recibe la aplicación de pantalla de inicio instalada en el teléfono; para el widget, la aplicación no envía nada desde el teléfono.</p>
+
+<h3>4.6. A quién no se transmiten los datos</h3>
 <p>El desarrollador no vende ni cede a terceros los datos del propietario y de sus clientes, no los utiliza para publicidad y tampoco los recibe él mismo, salvo en el caso descrito en la sección 5.</p>
 
 <h2 id="transit">5. Servidor intermedio para WhatsApp</h2>
@@ -114,7 +117,7 @@
 
 <h2 id="security">9. Seguridad</h2>
 <p>Los tokens y las contraseñas se guardan de forma cifrada con una clave situada en el almacenamiento protegido de Android (Keystore). Todas las conexiones de red utilizan TLS. Los eventos de WhatsApp se cifran en el servidor intermedio con la clave del propietario, y la copia de seguridad, con la contraseña del propietario antes de enviarla a Drive.</p>
-<p>El propietario puede activar el acceso a la aplicación con PIN y, además, con huella dactilar: entonces las pantallas de la aplicación solo se abren tras el acceso, mientras el bot sigue funcionando. El PIN se guarda en el teléfono en forma de hash, no se transmite al desarrollador, y el desarrollador no puede recuperar un PIN olvidado; para ello, al activar el acceso la aplicación muestra un código de recuperación. Con el acceso activado, el propietario puede desactivar las notificaciones sobre los clientes.</p>
+<p>El propietario puede activar el acceso a la aplicación con PIN y, además, con huella dactilar: entonces las pantallas de la aplicación solo se abren tras el acceso, mientras el bot sigue funcionando. El PIN se guarda en el teléfono en forma de hash, no se transmite al desarrollador, y el desarrollador no puede recuperar un PIN olvidado; para ello, al activar el acceso la aplicación muestra un código de recuperación. Con el acceso activado, el propietario puede desactivar las notificaciones sobre los clientes y la visualización de las sesiones en el widget.</p>
 <p>El PIN bloquea las pantallas de la aplicación, pero no cifra su base de datos en el teléfono, por lo que se recomienda al propietario proteger en todo caso el teléfono con un bloqueo de pantalla. Si el acceso con PIN no está activado, quien obtenga acceso al teléfono desbloqueado obtiene también acceso a los datos de la aplicación.</p>
 
 <h2 id="rights">10. Derechos de los clientes del propietario y edad</h2>

@@ -12,7 +12,7 @@
 <p class="langs"><a href="privacy.html">Русский</a> · <a href="privacy.en.html">English</a> · <a href="privacy.uk.html">Українська</a> · <strong>Deutsch</strong> · <a href="privacy.fr.html">Français</a> · <a href="privacy.es.html">Español</a> · <a href="privacy.pt.html">Português (Portugal)</a> · <a href="privacy.pt-BR.html">Português (Brasil)</a> · <a href="privacy.ar.html">العربية</a></p>
 
 <h1>Datenschutzerklärung von PsyBot</h1>
-<p class="date">Fassung vom 13. November 2026. Dies ist eine Übersetzung des <a href="privacy.html">russischen Originals</a>; bei Abweichungen gilt der russische Text.</p>
+<p class="date">Fassung vom 26. November 2026. Dies ist eine Übersetzung des <a href="privacy.html">russischen Originals</a>; bei Abweichungen gilt der russische Text.</p>
 
 <h2 id="about">1. Worum es in diesem Dokument geht</h2>
 <p>PsyBot ist eine Android-App, mit der eine Fachkraft in privater Praxis (im Folgenden <strong>Inhaber</strong>) die Termine ihrer Klienten über die Messenger Telegram, Max und WhatsApp verwaltet. Die App wird vom Einzelunternehmer Dmitrii Fomin, Georgien (im Folgenden <strong>Entwickler</strong>), entwickelt und vertrieben.</p>
@@ -74,7 +74,10 @@
 <h3>4.4. Werbung in der kostenlosen Version</h3>
 <p>Im Abo Base zeigt die App Werbung über Google AdMob. Die Werbung ist <strong>nicht personalisiert</strong>: Die App fordert bei AdMob Anzeigen an, ohne den Interessenverlauf des Nutzers zu verwenden. Das AdMob-SDK kann dabei technische Angaben zum Gerät erhalten (Modell, Android-Version, Werbe-ID, ungefährer Standort anhand der IP-Adresse) gemäß der <a href="https://policies.google.com/technologies/ads">Richtlinie von Google</a>. Werbung wird nur dem Inhaber in seiner App gezeigt, die Klienten des Inhabers sehen keine Werbung. In den Abos Pro und Ultimate gibt es keine Werbung.</p>
 
-<h3>4.5. An wen keine Daten übermittelt werden</h3>
+<h3>4.5. Widget auf dem Startbildschirm</h3>
+<p>Wenn der Inhaber das Widget „Anstehende Sitzungen“ auf dem Startbildschirm des Telefons platziert hat, erhält die auf dem Telefon installierte Startbildschirm-App dessen Inhalt – Sitzungszeiten, Aliasnamen der Klienten, Namen der Gruppensitzungen sowie die Anzahl neuer Anfragen und Ereignisse; für das Widget sendet die App nichts vom Telefon aus.</p>
+
+<h3>4.6. An wen keine Daten übermittelt werden</h3>
 <p>Der Entwickler verkauft die Daten des Inhabers und seiner Klienten nicht, gibt sie nicht an Dritte weiter, verwendet sie nicht für Werbung und erhält sie auch selbst nicht – außer in dem in Abschnitt 5 beschriebenen Fall.</p>
 
 <h2 id="transit">5. Vermittlungsserver für WhatsApp</h2>
@@ -114,7 +117,7 @@
 
 <h2 id="security">9. Sicherheit</h2>
 <p>Token und Passwörter werden verschlüsselt gespeichert, mit einem Schlüssel im geschützten Speicher von Android (Keystore). Alle Netzwerkverbindungen verwenden TLS. WhatsApp-Ereignisse werden auf dem Vermittlungsserver mit dem Schlüssel des Inhabers verschlüsselt, die Sicherung mit dem Passwort des Inhabers, bevor sie an Drive gesendet wird.</p>
-<p>Der Inhaber kann die Anmeldung in der App per PIN und zusätzlich per Fingerabdruck einschalten: Dann öffnen sich die Bildschirme der App erst nach der Anmeldung, während der Bot weiterläuft. Die PIN wird auf dem Telefon als Hash gespeichert und nicht an den Entwickler übermittelt, und der Entwickler kann eine vergessene PIN nicht wiederherstellen – dafür zeigt die App beim Einschalten der Anmeldung einen Wiederherstellungscode. Bei eingeschalteter Anmeldung kann der Inhaber die Anzeige von Benachrichtigungen über Klienten ausschalten.</p>
+<p>Der Inhaber kann die Anmeldung in der App per PIN und zusätzlich per Fingerabdruck einschalten: Dann öffnen sich die Bildschirme der App erst nach der Anmeldung, während der Bot weiterläuft. Die PIN wird auf dem Telefon als Hash gespeichert und nicht an den Entwickler übermittelt, und der Entwickler kann eine vergessene PIN nicht wiederherstellen – dafür zeigt die App beim Einschalten der Anmeldung einen Wiederherstellungscode. Bei eingeschalteter Anmeldung kann der Inhaber die Anzeige von Benachrichtigungen über Klienten und die Anzeige der Sitzungen im Widget ausschalten.</p>
 <p>Die PIN sperrt die Bildschirme der App, verschlüsselt aber nicht ihre Datenbank auf dem Telefon; deshalb wird dem Inhaber empfohlen, das Telefon in jedem Fall mit einer Bildschirmsperre zu schützen. Ist die Anmeldung per PIN nicht eingeschaltet, erhält jeder, der Zugriff auf das entsperrte Telefon bekommt, auch Zugriff auf die Daten der App.</p>
 
 <h2 id="rights">10. Rechte der Klienten des Inhabers und Alter</h2>

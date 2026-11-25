@@ -12,7 +12,7 @@
 <p class="langs"><a href="privacy.html">Русский</a> · <a href="privacy.en.html">English</a> · <a href="privacy.uk.html">Українська</a> · <a href="privacy.de.html">Deutsch</a> · <a href="privacy.fr.html">Français</a> · <a href="privacy.es.html">Español</a> · <strong>Português (Portugal)</strong> · <a href="privacy.pt-BR.html">Português (Brasil)</a> · <a href="privacy.ar.html">العربية</a></p>
 
 <h1>Política de privacidade do PsyBot</h1>
-<p class="date">Versão de 13 de novembro de 2026. Esta é uma tradução do <a href="privacy.html">original em russo</a>; em caso de divergência, prevalece o texto russo.</p>
+<p class="date">Versão de 26 de novembro de 2026. Esta é uma tradução do <a href="privacy.html">original em russo</a>; em caso de divergência, prevalece o texto russo.</p>
 
 <h2 id="about">1. Sobre este documento</h2>
 <p>O PsyBot é uma aplicação para Android com a qual um profissional em prática privada (doravante, o <strong>proprietário</strong>) gere as marcações dos seus clientes através dos serviços de mensagens Telegram, Max e WhatsApp. A aplicação é desenvolvida e distribuída pelo empresário em nome individual Dmitrii Fomin, Geórgia (doravante, o <strong>programador</strong>).</p>
@@ -74,7 +74,10 @@
 <h3>4.4. Publicidade na versão gratuita</h3>
 <p>Na subscrição Base, a aplicação mostra publicidade através do Google AdMob. A publicidade é <strong>não personalizada</strong>: a aplicação pede anúncios ao AdMob sem utilizar o histórico de interesses do utilizador. Ainda assim, o SDK do AdMob pode receber informações técnicas sobre o dispositivo (modelo, versão do Android, identificador de publicidade, localização aproximada pelo endereço IP) de acordo com a <a href="https://policies.google.com/technologies/ads">política da Google</a>. A publicidade é mostrada apenas ao proprietário na sua aplicação; os clientes do proprietário não a veem. Nas subscrições Pro e Ultimate não há publicidade.</p>
 
-<h3>4.5. A quem os dados não são transmitidos</h3>
+<h3>4.5. Widget do ecrã principal</h3>
+<p>Se o proprietário tiver colocado o widget «Próximas sessões» no ecrã principal do telemóvel, o seu conteúdo — as horas das sessões, os pseudónimos dos clientes, os nomes das sessões de grupo e o número de novos pedidos e eventos — é recebido pela aplicação de ecrã principal instalada no telemóvel; para o widget, a aplicação não envia nada a partir do telemóvel.</p>
+
+<h3>4.6. A quem os dados não são transmitidos</h3>
 <p>O programador não vende nem cede a terceiros os dados do proprietário e dos seus clientes, não os utiliza para publicidade e também não os recebe, exceto no caso descrito na secção 5.</p>
 
 <h2 id="transit">5. Servidor intermediário para o WhatsApp</h2>
@@ -114,7 +117,7 @@
 
 <h2 id="security">9. Segurança</h2>
 <p>Os tokens e as palavras-passe são guardados de forma encriptada, com uma chave no armazenamento protegido do Android (Keystore). Todas as ligações de rede utilizam TLS. Os eventos do WhatsApp são encriptados no servidor intermediário com a chave do proprietário, e a cópia de segurança com a palavra-passe do proprietário antes de ser enviada para o Drive.</p>
-<p>O proprietário pode ativar a entrada na aplicação por PIN e, adicionalmente, por impressão digital: os ecrãs da aplicação só se abrem então depois da entrada, enquanto o bot continua a funcionar. O PIN é guardado no telemóvel sob a forma de hash, não é transmitido ao programador, e o programador não consegue recuperar um PIN esquecido — para isso, ao ativar a entrada, a aplicação mostra um código de recuperação. Com a entrada ativada, o proprietário pode desativar as notificações sobre os clientes.</p>
+<p>O proprietário pode ativar a entrada na aplicação por PIN e, adicionalmente, por impressão digital: os ecrãs da aplicação só se abrem então depois da entrada, enquanto o bot continua a funcionar. O PIN é guardado no telemóvel sob a forma de hash, não é transmitido ao programador, e o programador não consegue recuperar um PIN esquecido — para isso, ao ativar a entrada, a aplicação mostra um código de recuperação. Com a entrada ativada, o proprietário pode desativar as notificações sobre os clientes e a apresentação das sessões no widget.</p>
 <p>O PIN bloqueia os ecrãs da aplicação, mas não encripta a sua base de dados no telemóvel, pelo que se recomenda ao proprietário que proteja sempre o telemóvel com um bloqueio de ecrã. Se a entrada por PIN não estiver ativada, quem obtiver acesso ao telemóvel desbloqueado obtém também acesso aos dados da aplicação.</p>
 
 <h2 id="rights">10. Direitos dos clientes do proprietário e idade</h2>
