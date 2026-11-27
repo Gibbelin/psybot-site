@@ -12,7 +12,7 @@
 <p class="langs"><a href="privacy.html">Русский</a> · <a href="privacy.en.html">English</a> · <a href="privacy.uk.html">Українська</a> · <strong>Deutsch</strong> · <a href="privacy.fr.html">Français</a> · <a href="privacy.es.html">Español</a> · <a href="privacy.pt.html">Português (Portugal)</a> · <a href="privacy.pt-BR.html">Português (Brasil)</a> · <a href="privacy.ar.html">العربية</a></p>
 
 <h1>Datenschutzerklärung von PsyBot</h1>
-<p class="date">Fassung vom 26. November 2026. Dies ist eine Übersetzung des <a href="privacy.html">russischen Originals</a>; bei Abweichungen gilt der russische Text.</p>
+<p class="date">Fassung vom 27. November 2026. Dies ist eine Übersetzung des <a href="privacy.html">russischen Originals</a>; bei Abweichungen gilt der russische Text.</p>
 
 <h2 id="about">1. Worum es in diesem Dokument geht</h2>
 <p>PsyBot ist eine Android-App, mit der eine Fachkraft in privater Praxis (im Folgenden <strong>Inhaber</strong>) die Termine ihrer Klienten über die Messenger Telegram, Max und WhatsApp verwaltet. Die App wird vom Einzelunternehmer Dmitrii Fomin, Georgien (im Folgenden <strong>Entwickler</strong>), entwickelt und vertrieben.</p>
@@ -29,7 +29,7 @@
 <li>Zugangsdaten der verbundenen Messenger (Token des Telegram-Bots, Max-Token, Kennung der Telefonnummer und Token von WhatsApp), verschlüsselt gespeichert;</li>
 <li>bei verbundenem Google-Konto: die Kontoadresse und die Zugriffstoken für Google Kalender und Google Drive, verschlüsselt gespeichert;</li>
 <li>das Passwort der Sicherung, wenn der Inhaber die Sicherung in Google Drive eingeschaltet hat, verschlüsselt gespeichert;</li>
-<li>Einstellungen der Anmeldung in der App, wenn der Inhaber sie eingeschaltet hat: der Hash der PIN und der Wiederherstellungscode, verschlüsselt gespeichert und nicht in der Sicherung enthalten;</li>
+<li>Einstellungen der Anmeldung in der App, wenn der Inhaber sie eingeschaltet hat: der Hash der PIN, der Wiederherstellungscode und der Schlüssel der Datenbankverschlüsselung, verschlüsselt gespeichert und nicht in der Sicherung enthalten;</li>
 <li>das Diagnoseprotokoll der App (Abschnitt 7).</li>
 </ul>
 <h3>3.2. Daten der Klienten des Inhabers</h3>
@@ -118,7 +118,7 @@
 <h2 id="security">9. Sicherheit</h2>
 <p>Token und Passwörter werden verschlüsselt gespeichert, mit einem Schlüssel im geschützten Speicher von Android (Keystore). Alle Netzwerkverbindungen verwenden TLS. WhatsApp-Ereignisse werden auf dem Vermittlungsserver mit dem Schlüssel des Inhabers verschlüsselt, die Sicherung mit dem Passwort des Inhabers, bevor sie an Drive gesendet wird.</p>
 <p>Der Inhaber kann die Anmeldung in der App per PIN und zusätzlich per Fingerabdruck einschalten: Dann öffnen sich die Bildschirme der App erst nach der Anmeldung, während der Bot weiterläuft. Die PIN wird auf dem Telefon als Hash gespeichert und nicht an den Entwickler übermittelt, und der Entwickler kann eine vergessene PIN nicht wiederherstellen – dafür zeigt die App beim Einschalten der Anmeldung einen Wiederherstellungscode. Bei eingeschalteter Anmeldung kann der Inhaber die Anzeige von Benachrichtigungen über Klienten und die Anzeige der Sitzungen im Widget ausschalten.</p>
-<p>Die PIN sperrt die Bildschirme der App, verschlüsselt aber nicht ihre Datenbank auf dem Telefon; deshalb wird dem Inhaber empfohlen, das Telefon in jedem Fall mit einer Bildschirmsperre zu schützen. Ist die Anmeldung per PIN nicht eingeschaltet, erhält jeder, der Zugriff auf das entsperrte Telefon bekommt, auch Zugriff auf die Daten der App.</p>
+<p>Solange die Anmeldung per PIN eingeschaltet ist, ist die Datenbank der App auf dem Telefon verschlüsselt. Den Schlüssel bewahrt das Telefon im geschützten Speicher von Android (Keystore) auf, deshalb arbeitet der Bot ohne Eingabe der PIN. Eine Ersatzkopie des Schlüssels ist mit dem Wiederherstellungscode verschlüsselt und wird gebraucht, falls das Telefon den Schlüssel verliert. Die Verschlüsselung schützt die Datenbankdatei, wenn sie dem Telefon entnommen wird; auf einem eingeschalteten, entsperrten Telefon mit Superuser-Rechten lässt sie sich umgehen. Ist die Anmeldung per PIN nicht eingeschaltet, verschlüsselt die App die Datenbank nicht, und jeder, der Zugriff auf das entsperrte Telefon bekommt, erhält auch Zugriff auf die Daten der App. In jedem Fall wird empfohlen, das Telefon mit einer Bildschirmsperre zu schützen.</p>
 
 <h2 id="rights">10. Rechte der Klienten des Inhabers und Alter</h2>
 <p>Ein Klient des Inhabers, der seine Daten einsehen, berichtigen oder löschen lassen möchte, wendet sich an den Inhaber: Nur er hat diese Daten, und die App erlaubt es, die Klientenkarte zu ändern und zu löschen. Der Entwickler kann Klientendaten weder lesen noch löschen, da er keinen Zugriff darauf hat; auf dem Vermittlungsserver gibt es keine Angaben, anhand derer sich ein bestimmter Klient finden ließe.</p>

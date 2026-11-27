@@ -12,7 +12,7 @@
 <p class="langs"><a href="privacy.html">Русский</a> · <a href="privacy.en.html">English</a> · <a href="privacy.uk.html">Українська</a> · <a href="privacy.de.html">Deutsch</a> · <strong>Français</strong> · <a href="privacy.es.html">Español</a> · <a href="privacy.pt.html">Português (Portugal)</a> · <a href="privacy.pt-BR.html">Português (Brasil)</a> · <a href="privacy.ar.html">العربية</a></p>
 
 <h1>Politique de confidentialité de PsyBot</h1>
-<p class="date">Version du 26 novembre 2026. Ceci est une traduction de l’<a href="privacy.html">original russe</a>&nbsp;; en cas de divergence, le texte russe fait foi.</p>
+<p class="date">Version du 27 novembre 2026. Ceci est une traduction de l’<a href="privacy.html">original russe</a>&nbsp;; en cas de divergence, le texte russe fait foi.</p>
 
 <h2 id="about">1. Objet de ce document</h2>
 <p>PsyBot est une application Android grâce à laquelle un professionnel en pratique privée (ci-après le <strong>propriétaire</strong>) gère les rendez-vous de ses clients via les messageries Telegram, Max et WhatsApp. L’application est développée et distribuée par l’entrepreneur individuel Dmitrii Fomin, Géorgie (ci-après le <strong>développeur</strong>).</p>
@@ -29,7 +29,7 @@
 <li>identifiants des messageries connectées (jeton du bot Telegram, jeton Max, identifiant du numéro et jeton WhatsApp), stockés sous forme chiffrée&nbsp;;</li>
 <li>si un compte Google est connecté&nbsp;: l’adresse du compte et les jetons d’accès à Google Agenda et à Google Drive, stockés sous forme chiffrée&nbsp;;</li>
 <li>le mot de passe de la sauvegarde, si le propriétaire a activé la sauvegarde sur Google Drive, stocké sous forme chiffrée&nbsp;;</li>
-<li>les réglages de connexion à l’application, si le propriétaire l’a activée&nbsp;: l’empreinte (hash) du code PIN et le code de récupération, stockés sous forme chiffrée et exclus de la sauvegarde&nbsp;;</li>
+<li>les réglages de connexion à l’application, si le propriétaire l’a activée&nbsp;: l’empreinte (hash) du code PIN, le code de récupération et la clé de chiffrement de la base de données, stockés sous forme chiffrée et exclus de la sauvegarde&nbsp;;</li>
 <li>le journal de diagnostic de l’application (section 7).</li>
 </ul>
 <h3>3.2. Données des clients du propriétaire</h3>
@@ -118,7 +118,7 @@
 <h2 id="security">9. Sécurité</h2>
 <p>Les jetons et les mots de passe sont stockés sous forme chiffrée, avec une clé placée dans le stockage sécurisé d’Android (Keystore). Toutes les connexions réseau utilisent TLS. Les événements WhatsApp sont chiffrés sur le relais avec la clé du propriétaire, et la sauvegarde avec le mot de passe du propriétaire avant son envoi sur Drive.</p>
 <p>Le propriétaire peut activer la connexion à l’application par code PIN et, en complément, par empreinte digitale&nbsp;: les écrans de l’application ne s’ouvrent alors qu’après la connexion, tandis que le bot continue de fonctionner. Le code PIN est stocké sur le téléphone sous forme d’empreinte (hash), n’est pas transmis au développeur, et le développeur ne peut pas récupérer un code PIN oublié — pour cela, l’application affiche un code de récupération lors de l’activation de la connexion. Lorsque la connexion est activée, le propriétaire peut désactiver l’affichage des notifications concernant les clients et celui des séances sur le widget.</p>
-<p>Le code PIN verrouille les écrans de l’application, mais ne chiffre pas sa base de données sur le téléphone&nbsp;; il est donc recommandé au propriétaire de protéger dans tous les cas son téléphone par un verrouillage de l’écran. Si la connexion par code PIN n’est pas activée, quiconque accède au téléphone déverrouillé accède aussi aux données de l’application.</p>
+<p>Tant que la connexion par code PIN est activée, la base de données de l’application sur le téléphone est chiffrée. La clé de chiffrement est conservée par le téléphone dans le stockage protégé d’Android (Keystore)&nbsp;; le bot fonctionne donc sans saisie du code PIN. Une copie de secours de la clé est chiffrée avec le code de récupération et sert si le téléphone perd la clé. Le chiffrement protège le fichier de la base lorsqu’il est extrait du téléphone&nbsp;; sur un téléphone allumé et déverrouillé disposant des droits de superutilisateur, il peut être contourné. Si la connexion par code PIN n’est pas activée, l’application ne chiffre pas la base, et quiconque accède au téléphone déverrouillé accède aussi aux données de l’application. Dans tous les cas, il est recommandé de protéger le téléphone par un verrouillage de l’écran.</p>
 
 <h2 id="rights">10. Droits des clients du propriétaire et âge</h2>
 <p>Le client du propriétaire qui souhaite connaître, rectifier ou supprimer ses données s’adresse au propriétaire&nbsp;: lui seul détient ces données, et l’application permet de modifier et de supprimer la fiche du client. Le développeur ne peut ni lire ni supprimer les données des clients, puisqu’il n’y a pas accès&nbsp;; le relais ne contient aucune information permettant de retrouver un client précis.</p>

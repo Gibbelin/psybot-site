@@ -12,7 +12,7 @@
 <p class="langs"><a href="privacy.html">Русский</a> · <a href="privacy.en.html">English</a> · <a href="privacy.uk.html">Українська</a> · <a href="privacy.de.html">Deutsch</a> · <a href="privacy.fr.html">Français</a> · <a href="privacy.es.html">Español</a> · <a href="privacy.pt.html">Português (Portugal)</a> · <strong>Português (Brasil)</strong> · <a href="privacy.ar.html">العربية</a></p>
 
 <h1>Política de privacidade do PsyBot</h1>
-<p class="date">Versão de 26 de novembro de 2026. Esta é uma tradução do <a href="privacy.html">original em russo</a>; em caso de divergência, prevalece o texto em russo.</p>
+<p class="date">Versão de 27 de novembro de 2026. Esta é uma tradução do <a href="privacy.html">original em russo</a>; em caso de divergência, prevalece o texto em russo.</p>
 
 <h2 id="about">1. Sobre este documento</h2>
 <p>O PsyBot é um aplicativo para Android com o qual um profissional que atende em prática privada (doravante, o <strong>proprietário</strong>) gerencia os agendamentos dos seus clientes pelos aplicativos de mensagens Telegram, Max e WhatsApp. O aplicativo é desenvolvido e distribuído pelo empresário individual Dmitrii Fomin, Geórgia (doravante, o <strong>desenvolvedor</strong>).</p>
@@ -29,7 +29,7 @@
 <li>credenciais dos aplicativos de mensagens conectados (token do bot do Telegram, token do Max, identificador do número e token do WhatsApp), guardadas de forma criptografada;</li>
 <li>quando uma conta Google é conectada: o endereço da conta e os tokens de acesso ao Google Agenda e ao Google Drive, guardados de forma criptografada;</li>
 <li>a senha do backup, se o proprietário tiver ativado o backup no Google Drive, guardada de forma criptografada;</li>
-<li>as configurações de bloqueio do aplicativo, se o proprietário o tiver ativado: o hash do PIN e o código de recuperação, guardados de forma criptografada e não incluídos no backup;</li>
+<li>as configurações de bloqueio do aplicativo, se o proprietário o tiver ativado: o hash do PIN, o código de recuperação e a chave de criptografia do banco de dados, guardados de forma criptografada e não incluídos no backup;</li>
 <li>o registro de diagnóstico do aplicativo (seção 7).</li>
 </ul>
 <h3>3.2. Dados dos clientes do proprietário</h3>
@@ -118,7 +118,7 @@
 <h2 id="security">9. Segurança</h2>
 <p>Os tokens e as senhas são guardados de forma criptografada, com uma chave no armazenamento protegido do Android (Keystore). Todas as conexões de rede usam TLS. Os eventos do WhatsApp são criptografados no servidor intermediário com a chave do proprietário, e o backup, com a senha do proprietário antes de ser enviado ao Drive.</p>
 <p>O proprietário pode ativar o bloqueio do aplicativo com PIN e, adicionalmente, o desbloqueio com impressão digital: nesse caso, as telas do aplicativo só se abrem após o desbloqueio, enquanto o bot continua funcionando. O PIN é guardado no celular na forma de hash, não é transmitido ao desenvolvedor, e o desenvolvedor não consegue recuperar um PIN esquecido — para isso, ao ativar o bloqueio, o aplicativo mostra um código de recuperação. Com o bloqueio ativado, o proprietário pode desativar as notificações sobre os clientes e a exibição das sessões no widget.</p>
-<p>O PIN bloqueia as telas do aplicativo, mas não criptografa o banco de dados dele no celular; por isso, recomenda-se que o proprietário proteja sempre o celular com um bloqueio de tela. Se o bloqueio com PIN não estiver ativado, quem tiver acesso ao celular desbloqueado também terá acesso aos dados do aplicativo.</p>
+<p>Enquanto o bloqueio com PIN estiver ativado, o banco de dados do aplicativo no celular fica criptografado. A chave de criptografia é guardada pelo celular no armazenamento protegido do Android (Keystore); por isso, o bot funciona sem que o PIN seja digitado. Uma cópia reserva da chave é criptografada com o código de recuperação e é necessária se o celular perder a chave. A criptografia protege o arquivo do banco de dados quando ele é retirado do celular; em um celular ligado e desbloqueado com permissões de superusuário, ela pode ser contornada. Se o bloqueio com PIN não estiver ativado, o aplicativo não criptografa o banco de dados, e quem tiver acesso ao celular desbloqueado também terá acesso aos dados do aplicativo. Em qualquer caso, recomenda-se proteger o celular com um bloqueio de tela.</p>
 
 <h2 id="rights">10. Direitos dos clientes do proprietário e idade</h2>
 <p>O cliente do proprietário que quiser conhecer, corrigir ou excluir os seus dados deve se dirigir ao proprietário: só ele tem esses dados, e o aplicativo permite alterar e excluir a ficha do cliente. O desenvolvedor não consegue ler nem excluir os dados dos clientes, pois não tem acesso a eles; no servidor intermediário não há informações que permitam encontrar um cliente específico.</p>
